@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/n4ssser/Breakout/Client/SocketClient.cpp
+SocketClient.h
+/home/n4ssser/Breakout/Client/SocketClient.h
+
+/home/n4ssser/Breakout/Client/SocketClient.h
+sys/socket.h
+-
+sys/types.h
+-
+netdb.h
+-
+cstring
+-
+string
+-
+iostream
+-
+pthread.h
+-
+vector
+-
+unistd.h
+-
+arpa/inet.h
+-
+
+/home/n4ssser/Breakout/Client/main.cpp
+iostream
+-
+SocketClient.h
+/home/n4ssser/Breakout/Client/SocketClient.h
+
