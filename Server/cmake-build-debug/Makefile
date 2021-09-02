@@ -129,6 +129,174 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+Ball.o: Ball.cpp.o
+.PHONY : Ball.o
+
+# target to build an object file
+Ball.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Ball.cpp.o
+.PHONY : Ball.cpp.o
+
+Ball.i: Ball.cpp.i
+.PHONY : Ball.i
+
+# target to preprocess a source file
+Ball.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Ball.cpp.i
+.PHONY : Ball.cpp.i
+
+Ball.s: Ball.cpp.s
+.PHONY : Ball.s
+
+# target to generate assembly for a file
+Ball.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Ball.cpp.s
+.PHONY : Ball.cpp.s
+
+Breakout.o: Breakout.cpp.o
+.PHONY : Breakout.o
+
+# target to build an object file
+Breakout.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Breakout.cpp.o
+.PHONY : Breakout.cpp.o
+
+Breakout.i: Breakout.cpp.i
+.PHONY : Breakout.i
+
+# target to preprocess a source file
+Breakout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Breakout.cpp.i
+.PHONY : Breakout.cpp.i
+
+Breakout.s: Breakout.cpp.s
+.PHONY : Breakout.s
+
+# target to generate assembly for a file
+Breakout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Breakout.cpp.s
+.PHONY : Breakout.cpp.s
+
+Brick.o: Brick.cpp.o
+.PHONY : Brick.o
+
+# target to build an object file
+Brick.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Brick.cpp.o
+.PHONY : Brick.cpp.o
+
+Brick.i: Brick.cpp.i
+.PHONY : Brick.i
+
+# target to preprocess a source file
+Brick.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Brick.cpp.i
+.PHONY : Brick.cpp.i
+
+Brick.s: Brick.cpp.s
+.PHONY : Brick.s
+
+# target to generate assembly for a file
+Brick.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Brick.cpp.s
+.PHONY : Brick.cpp.s
+
+Force.o: Force.cpp.o
+.PHONY : Force.o
+
+# target to build an object file
+Force.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Force.cpp.o
+.PHONY : Force.cpp.o
+
+Force.i: Force.cpp.i
+.PHONY : Force.i
+
+# target to preprocess a source file
+Force.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Force.cpp.i
+.PHONY : Force.cpp.i
+
+Force.s: Force.cpp.s
+.PHONY : Force.s
+
+# target to generate assembly for a file
+Force.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Force.cpp.s
+.PHONY : Force.cpp.s
+
+Game.o: Game.cpp.o
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+Painter.o: Painter.cpp.o
+.PHONY : Painter.o
+
+# target to build an object file
+Painter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Painter.cpp.o
+.PHONY : Painter.cpp.o
+
+Painter.i: Painter.cpp.i
+.PHONY : Painter.i
+
+# target to preprocess a source file
+Painter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Painter.cpp.i
+.PHONY : Painter.cpp.i
+
+Painter.s: Painter.cpp.s
+.PHONY : Painter.s
+
+# target to generate assembly for a file
+Painter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Painter.cpp.s
+.PHONY : Painter.cpp.s
+
+Pedal.o: Pedal.cpp.o
+.PHONY : Pedal.o
+
+# target to build an object file
+Pedal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Pedal.cpp.o
+.PHONY : Pedal.cpp.o
+
+Pedal.i: Pedal.cpp.i
+.PHONY : Pedal.i
+
+# target to preprocess a source file
+Pedal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Pedal.cpp.i
+.PHONY : Pedal.cpp.i
+
+Pedal.s: Pedal.cpp.s
+.PHONY : Pedal.s
+
+# target to generate assembly for a file
+Pedal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Pedal.cpp.s
+.PHONY : Pedal.cpp.s
+
 SocketServer.o: SocketServer.cpp.o
 .PHONY : SocketServer.o
 
@@ -153,29 +321,29 @@ SocketServer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/SocketServer.cpp.s
 .PHONY : SocketServer.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+Wall.o: Wall.cpp.o
+.PHONY : Wall.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cpp.o
-.PHONY : main.cpp.o
+Wall.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Wall.cpp.o
+.PHONY : Wall.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+Wall.i: Wall.cpp.i
+.PHONY : Wall.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cpp.i
-.PHONY : main.cpp.i
+Wall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Wall.cpp.i
+.PHONY : Wall.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+Wall.s: Wall.cpp.s
+.PHONY : Wall.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.cpp.s
-.PHONY : main.cpp.s
+Wall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Wall.cpp.s
+.PHONY : Wall.cpp.s
 
 # Help Target
 help:
@@ -186,12 +354,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... server"
+	@echo "... Ball.o"
+	@echo "... Ball.i"
+	@echo "... Ball.s"
+	@echo "... Breakout.o"
+	@echo "... Breakout.i"
+	@echo "... Breakout.s"
+	@echo "... Brick.o"
+	@echo "... Brick.i"
+	@echo "... Brick.s"
+	@echo "... Force.o"
+	@echo "... Force.i"
+	@echo "... Force.s"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
+	@echo "... Painter.o"
+	@echo "... Painter.i"
+	@echo "... Painter.s"
+	@echo "... Pedal.o"
+	@echo "... Pedal.i"
+	@echo "... Pedal.s"
 	@echo "... SocketServer.o"
 	@echo "... SocketServer.i"
 	@echo "... SocketServer.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Wall.o"
+	@echo "... Wall.i"
+	@echo "... Wall.s"
 .PHONY : help
 
 

@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/n4ssser/Breakout/Client/SocketClient.cpp
-SocketClient.h
-/home/n4ssser/Breakout/Client/SocketClient.h
-
 /home/n4ssser/Breakout/Client/SocketClient.h
 sys/socket.h
 -
@@ -34,6 +30,8 @@ arpa/inet.h
 
 /home/n4ssser/Breakout/Client/main.cpp
 iostream
+-
+GL/glut.h
 -
 SocketClient.h
 /home/n4ssser/Breakout/Client/SocketClient.h

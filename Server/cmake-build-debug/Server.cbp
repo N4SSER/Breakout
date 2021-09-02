@@ -82,13 +82,55 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/n4ssser/Breakout/Server/Ball.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Ball.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Breakout.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Brick.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Brick.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Force.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Force.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Game.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Game.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Painter.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Painter.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Pedal.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Pedal.h">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/home/n4ssser/Breakout/Server/SocketServer.cpp">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/n4ssser/Breakout/Server/SocketServer.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/n4ssser/Breakout/Server/main.cpp">
+		<Unit filename="/home/n4ssser/Breakout/Server/Wall.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Wall.h">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/n4ssser/Breakout/Server/CMakeLists.txt">

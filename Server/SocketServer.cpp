@@ -1,7 +1,9 @@
 
 #include "SocketServer.h"
+#include "Game.h"
 SocketServer::SocketServer() {}
-
+Game* g = Game::getInstance();
+int x = Wall::WIDTH/2;
 bool SocketServer::create_socket() {
     descriptor = socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
     if(descriptor<0){
@@ -40,7 +42,7 @@ void SocketServer::run() {
             clients.push_back(data.descriptor);
             cout<<"connected!"<<endl;
             pthread_t thread;
-            pthread_create(&thread,0,SocketServer::client_controller,(void*)&data);
+            pthread_create(&thread,nullptr,SocketServer::client_controller,(void*)&data);
             pthread_detach(thread);
         }
     }
@@ -64,7 +66,7 @@ void *SocketServer::client_controller(void *obj) {
                 break;
             }
         }
-        cout<<message<<endl;
+        ctrlC(message);
     }
     close(data->descriptor);
     pthread_exit(NULL);
@@ -74,5 +76,15 @@ void SocketServer::send_message(const char *msn) {
     for(auto&client:clients){
         send(client,msn, strlen(msn),0);
     }
+}
+
+void SocketServer::ctrlC(string msg) {
+    if(msg == "a"){
+        x -=10;
+    }
+    if(msg == "d"){
+        x +=10;
+    }
+    g->setX(x);
 }
 

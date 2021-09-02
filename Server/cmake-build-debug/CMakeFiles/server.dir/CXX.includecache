@@ -6,33 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/n4ssser/Breakout/Server/SocketServer.cpp
-SocketServer.h
-/home/n4ssser/Breakout/Server/SocketServer.h
+/home/n4ssser/Breakout/Server/Ball.h
+Force.h
+/home/n4ssser/Breakout/Server/Force.h
+Painter.h
+/home/n4ssser/Breakout/Server/Painter.h
 
-/home/n4ssser/Breakout/Server/SocketServer.h
-sys/socket.h
--
-sys/types.h
--
-netdb.h
--
-cstring
--
-string
--
+/home/n4ssser/Breakout/Server/Brick.cpp
 iostream
 -
-pthread.h
--
-vector
--
-unistd.h
--
+Brick.h
+/home/n4ssser/Breakout/Server/Brick.h
+Painter.h
+/home/n4ssser/Breakout/Server/Painter.h
+Ball.h
+/home/n4ssser/Breakout/Server/Ball.h
 
-/home/n4ssser/Breakout/Server/main.cpp
-iostream
--
-SocketServer.h
-/home/n4ssser/Breakout/Server/SocketServer.h
+/home/n4ssser/Breakout/Server/Brick.h
+Painter.h
+/home/n4ssser/Breakout/Server/Painter.h
+Force.h
+/home/n4ssser/Breakout/Server/Force.h
+Ball.h
+/home/n4ssser/Breakout/Server/Ball.h
+
+/home/n4ssser/Breakout/Server/Force.h
+
+/home/n4ssser/Breakout/Server/Painter.h
 

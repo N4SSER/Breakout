@@ -66,22 +66,9 @@ include CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/server.dir/flags.make
 
-CMakeFiles/server.dir/main.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/main.cpp.o -c /home/n4ssser/Breakout/Server/main.cpp
-
-CMakeFiles/server.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/main.cpp > CMakeFiles/server.dir/main.cpp.i
-
-CMakeFiles/server.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/main.cpp -o CMakeFiles/server.dir/main.cpp.s
-
 CMakeFiles/server.dir/SocketServer.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/SocketServer.cpp.o: ../SocketServer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/SocketServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/SocketServer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/SocketServer.cpp.o -c /home/n4ssser/Breakout/Server/SocketServer.cpp
 
 CMakeFiles/server.dir/SocketServer.cpp.i: cmake_force
@@ -92,19 +79,140 @@ CMakeFiles/server.dir/SocketServer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/SocketServer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/SocketServer.cpp -o CMakeFiles/server.dir/SocketServer.cpp.s
 
+CMakeFiles/server.dir/Breakout.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Breakout.cpp.o: ../Breakout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/Breakout.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Breakout.cpp.o -c /home/n4ssser/Breakout/Server/Breakout.cpp
+
+CMakeFiles/server.dir/Breakout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Breakout.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/Breakout.cpp > CMakeFiles/server.dir/Breakout.cpp.i
+
+CMakeFiles/server.dir/Breakout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Breakout.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Breakout.cpp -o CMakeFiles/server.dir/Breakout.cpp.s
+
+CMakeFiles/server.dir/Brick.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Brick.cpp.o: ../Brick.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/Brick.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Brick.cpp.o -c /home/n4ssser/Breakout/Server/Brick.cpp
+
+CMakeFiles/server.dir/Brick.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Brick.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/Brick.cpp > CMakeFiles/server.dir/Brick.cpp.i
+
+CMakeFiles/server.dir/Brick.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Brick.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Brick.cpp -o CMakeFiles/server.dir/Brick.cpp.s
+
+CMakeFiles/server.dir/Painter.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Painter.cpp.o: ../Painter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/Painter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Painter.cpp.o -c /home/n4ssser/Breakout/Server/Painter.cpp
+
+CMakeFiles/server.dir/Painter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Painter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/Painter.cpp > CMakeFiles/server.dir/Painter.cpp.i
+
+CMakeFiles/server.dir/Painter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Painter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Painter.cpp -o CMakeFiles/server.dir/Painter.cpp.s
+
+CMakeFiles/server.dir/Wall.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Wall.cpp.o: ../Wall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/Wall.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Wall.cpp.o -c /home/n4ssser/Breakout/Server/Wall.cpp
+
+CMakeFiles/server.dir/Wall.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Wall.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/Wall.cpp > CMakeFiles/server.dir/Wall.cpp.i
+
+CMakeFiles/server.dir/Wall.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Wall.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Wall.cpp -o CMakeFiles/server.dir/Wall.cpp.s
+
+CMakeFiles/server.dir/Force.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Force.cpp.o: ../Force.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/Force.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Force.cpp.o -c /home/n4ssser/Breakout/Server/Force.cpp
+
+CMakeFiles/server.dir/Force.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Force.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/Force.cpp > CMakeFiles/server.dir/Force.cpp.i
+
+CMakeFiles/server.dir/Force.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Force.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Force.cpp -o CMakeFiles/server.dir/Force.cpp.s
+
+CMakeFiles/server.dir/Ball.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Ball.cpp.o: ../Ball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server.dir/Ball.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Ball.cpp.o -c /home/n4ssser/Breakout/Server/Ball.cpp
+
+CMakeFiles/server.dir/Ball.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Ball.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/Ball.cpp > CMakeFiles/server.dir/Ball.cpp.i
+
+CMakeFiles/server.dir/Ball.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Ball.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Ball.cpp -o CMakeFiles/server.dir/Ball.cpp.s
+
+CMakeFiles/server.dir/Game.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Game.cpp.o: ../Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/server.dir/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Game.cpp.o -c /home/n4ssser/Breakout/Server/Game.cpp
+
+CMakeFiles/server.dir/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/Game.cpp > CMakeFiles/server.dir/Game.cpp.i
+
+CMakeFiles/server.dir/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Game.cpp -o CMakeFiles/server.dir/Game.cpp.s
+
+CMakeFiles/server.dir/Pedal.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Pedal.cpp.o: ../Pedal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/Pedal.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Pedal.cpp.o -c /home/n4ssser/Breakout/Server/Pedal.cpp
+
+CMakeFiles/server.dir/Pedal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Pedal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/Pedal.cpp > CMakeFiles/server.dir/Pedal.cpp.i
+
+CMakeFiles/server.dir/Pedal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Pedal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Pedal.cpp -o CMakeFiles/server.dir/Pedal.cpp.s
+
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/main.cpp.o" \
-"CMakeFiles/server.dir/SocketServer.cpp.o"
+"CMakeFiles/server.dir/SocketServer.cpp.o" \
+"CMakeFiles/server.dir/Breakout.cpp.o" \
+"CMakeFiles/server.dir/Brick.cpp.o" \
+"CMakeFiles/server.dir/Painter.cpp.o" \
+"CMakeFiles/server.dir/Wall.cpp.o" \
+"CMakeFiles/server.dir/Force.cpp.o" \
+"CMakeFiles/server.dir/Ball.cpp.o" \
+"CMakeFiles/server.dir/Game.cpp.o" \
+"CMakeFiles/server.dir/Pedal.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
-server: CMakeFiles/server.dir/main.cpp.o
 server: CMakeFiles/server.dir/SocketServer.cpp.o
+server: CMakeFiles/server.dir/Breakout.cpp.o
+server: CMakeFiles/server.dir/Brick.cpp.o
+server: CMakeFiles/server.dir/Painter.cpp.o
+server: CMakeFiles/server.dir/Wall.cpp.o
+server: CMakeFiles/server.dir/Force.cpp.o
+server: CMakeFiles/server.dir/Ball.cpp.o
+server: CMakeFiles/server.dir/Game.cpp.o
+server: CMakeFiles/server.dir/Pedal.cpp.o
 server: CMakeFiles/server.dir/build.make
+server: /usr/lib/x86_64-linux-gnu/libGL.so
+server: /usr/lib/x86_64-linux-gnu/libGLU.so
+server: /usr/lib/x86_64-linux-gnu/libglut.so
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

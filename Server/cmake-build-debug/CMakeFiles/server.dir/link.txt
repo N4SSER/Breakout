@@ -1,1 +1,1 @@
-/usr/bin/c++ -pthread -g CMakeFiles/server.dir/main.cpp.o CMakeFiles/server.dir/SocketServer.cpp.o -o server 
+/usr/bin/c++ -pthread -g CMakeFiles/server.dir/SocketServer.cpp.o CMakeFiles/server.dir/Breakout.cpp.o CMakeFiles/server.dir/Brick.cpp.o CMakeFiles/server.dir/Painter.cpp.o CMakeFiles/server.dir/Wall.cpp.o CMakeFiles/server.dir/Force.cpp.o CMakeFiles/server.dir/Ball.cpp.o CMakeFiles/server.dir/Game.cpp.o CMakeFiles/server.dir/Pedal.cpp.o -o server  /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so /usr/lib/x86_64-linux-gnu/libglut.so 
