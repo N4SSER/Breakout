@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(Wall::WIDTH,Wall::HEIGHT);
-    glutCreateWindow("Breakout");
+    glutCreateWindow("Crazy Breakout!");
     glClearColor(256, 0, 256, 1.0);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();

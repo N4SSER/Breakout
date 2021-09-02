@@ -23,7 +23,6 @@ int main(int argc, char **argv) {
     client = new SocketClient;
     pthread_t thread;
     pthread_create(&thread,nullptr,clientRun,nullptr);
-
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(0,0);

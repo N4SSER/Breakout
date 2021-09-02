@@ -12,8 +12,8 @@ public:
     constexpr static const float DT = 0.001;
     Ball();
     void draw(Painter &) const;
-    float x() const { return x_; }
-    float y() const { return y_; }
+    [[nodiscard]] float x() const { return x_; }
+    [[nodiscard]] float y() const { return y_; }
     void tick(Force);
 private:
     float x_;

@@ -6,9 +6,10 @@
 #include "Ball.h"
 Wall::Wall()
 {
+    int nHit=1;
     for (int row = 0; row < 8; ++row)
         for (int col = 0; col < COLS_COUNT; ++col)
-            bricks_.push_back(Brick(col, row));
+            bricks_.push_back(Brick(col, row,0,(nHit-1)*50,0, false));//Trabaje en esto para invocar a los bloques especiales y el resto de la log. ...
 }
 
 void Wall::draw(Painter &p) const

@@ -10,13 +10,16 @@
 
 class Brick {
 public:
-    enum { WIDTH = 20,
-        HEIGHT = 8 };
-    Brick(int col, int row);
+    enum { WIDTH = 25,
+        HEIGHT = 20 };
+    Brick(int col, int row, int type,int hits,int point,bool deep);
     void draw(Painter &) const;
     void destroy();
     Force tick(const Ball &);
 private:
+    int hits;
+    int poinTs;
+    int type;
     int points;
     float col_;
     float row_;
