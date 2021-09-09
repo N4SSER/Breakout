@@ -249,6 +249,30 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+Paddle.o: Paddle.cpp.o
+.PHONY : Paddle.o
+
+# target to build an object file
+Paddle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Paddle.cpp.o
+.PHONY : Paddle.cpp.o
+
+Paddle.i: Paddle.cpp.i
+.PHONY : Paddle.i
+
+# target to preprocess a source file
+Paddle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Paddle.cpp.i
+.PHONY : Paddle.cpp.i
+
+Paddle.s: Paddle.cpp.s
+.PHONY : Paddle.s
+
+# target to generate assembly for a file
+Paddle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Paddle.cpp.s
+.PHONY : Paddle.cpp.s
+
 Painter.o: Painter.cpp.o
 .PHONY : Painter.o
 
@@ -272,30 +296,6 @@ Painter.s: Painter.cpp.s
 Painter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Painter.cpp.s
 .PHONY : Painter.cpp.s
-
-Pedal.o: Pedal.cpp.o
-.PHONY : Pedal.o
-
-# target to build an object file
-Pedal.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Pedal.cpp.o
-.PHONY : Pedal.cpp.o
-
-Pedal.i: Pedal.cpp.i
-.PHONY : Pedal.i
-
-# target to preprocess a source file
-Pedal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Pedal.cpp.i
-.PHONY : Pedal.cpp.i
-
-Pedal.s: Pedal.cpp.s
-.PHONY : Pedal.s
-
-# target to generate assembly for a file
-Pedal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Pedal.cpp.s
-.PHONY : Pedal.cpp.s
 
 SocketServer.o: SocketServer.cpp.o
 .PHONY : SocketServer.o
@@ -369,12 +369,12 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... Paddle.o"
+	@echo "... Paddle.i"
+	@echo "... Paddle.s"
 	@echo "... Painter.o"
 	@echo "... Painter.i"
 	@echo "... Painter.s"
-	@echo "... Pedal.o"
-	@echo "... Pedal.i"
-	@echo "... Pedal.s"
 	@echo "... SocketServer.o"
 	@echo "... SocketServer.i"
 	@echo "... SocketServer.s"

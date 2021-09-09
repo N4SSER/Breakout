@@ -9,7 +9,7 @@
 #include "Painter.h"
 #include "Ball.h"
 #include "Wall.h"
-#include "Pedal.h"
+#include "Paddle.h"
 
 class Game {
 public:
@@ -17,12 +17,13 @@ public:
     void setX(int x);
     void tick();
     static Game* getInstance();
+    int level{};
+    Ball ball_;
 private:
     Game();
     inline static Game* gameI;
-    Ball ball_;
     Wall wall_;
-    Pedal pedal_;
+    Paddle paddle;
 };
 
 

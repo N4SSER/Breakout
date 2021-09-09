@@ -14,8 +14,8 @@ CMakeFiles/server.dir/Breakout.cpp.o: \
  ../Brick.h \
  ../Force.h \
  ../Game.h \
+ ../Paddle.h \
  ../Painter.h \
- ../Pedal.h \
  ../SocketServer.h \
  ../Wall.h
 CMakeFiles/server.dir/Brick.cpp.o: \
@@ -23,7 +23,10 @@ CMakeFiles/server.dir/Brick.cpp.o: \
  ../Brick.cpp \
  ../Brick.h \
  ../Force.h \
- ../Painter.h
+ ../Game.h \
+ ../Paddle.h \
+ ../Painter.h \
+ ../Wall.h
 CMakeFiles/server.dir/Force.cpp.o: \
  ../Force.cpp \
  ../Force.h
@@ -33,27 +36,27 @@ CMakeFiles/server.dir/Game.cpp.o: \
  ../Force.h \
  ../Game.cpp \
  ../Game.h \
+ ../Paddle.h \
  ../Painter.h \
- ../Pedal.h \
+ ../Wall.h
+CMakeFiles/server.dir/Paddle.cpp.o: \
+ ../Ball.h \
+ ../Brick.h \
+ ../Force.h \
+ ../Paddle.cpp \
+ ../Paddle.h \
+ ../Painter.h \
  ../Wall.h
 CMakeFiles/server.dir/Painter.cpp.o: \
  ../Painter.cpp \
  ../Painter.h
-CMakeFiles/server.dir/Pedal.cpp.o: \
- ../Ball.h \
- ../Brick.h \
- ../Force.h \
- ../Painter.h \
- ../Pedal.cpp \
- ../Pedal.h \
- ../Wall.h
 CMakeFiles/server.dir/SocketServer.cpp.o: \
  ../Ball.h \
  ../Brick.h \
  ../Force.h \
  ../Game.h \
+ ../Paddle.h \
  ../Painter.h \
- ../Pedal.h \
  ../SocketServer.cpp \
  ../SocketServer.h \
  ../Wall.h

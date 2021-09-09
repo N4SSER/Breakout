@@ -2,18 +2,18 @@
 // Created by n4ssser on 31/8/21.
 //
 
-#include "Pedal.h"
+#include "Paddle.h"
 #include "Wall.h"
 
-Pedal::Pedal(): x_(Wall::WIDTH / 2) {}
+Paddle::Paddle(): x_(Wall::WIDTH / 2) {}
 
-void Pedal::draw(Painter &p) const
+void Paddle::draw(Painter &p) const
 {
     p.setColor(Painter::WHITE);
     p.bar(x_ - WIDTH / 2, Wall::HEIGHT - 5,
           x_ + WIDTH - WIDTH / 2, Wall::HEIGHT);
 }
-Force Pedal::tick(const Ball &ball) const
+Force Paddle::tick(const Ball &ball) const
 {
     float s = ball.x() - x_ + WIDTH / 2;
     if (s >= 0 && s < WIDTH &&
@@ -23,7 +23,7 @@ Force Pedal::tick(const Ball &ball) const
     else
         return {0, 0};
 }
-void Pedal::setX(int x)
+void Paddle::setX(int x)
 {
     x_ = x;
 }

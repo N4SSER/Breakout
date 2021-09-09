@@ -1,5 +1,5 @@
 //
-// Created by n4ssser on 31/8/21.
+// Created by Nasser on 31/8/21.
 //
 
 #ifndef BREAKOUTLITE_BRICK_H
@@ -12,17 +12,20 @@ class Brick {
 public:
     enum { WIDTH = 25,
         HEIGHT = 20 };
-    Brick(int col, int row, int type,int hits,int point,bool deep);
+    Brick(int col, int row, int type);
     void draw(Painter &) const;
     void destroy();
     Force tick(const Ball &);
+    int points;
+    bool destroyed= false;
+
 private:
     int hits;
-    int poinTs;
     int type;
-    int points;
     float col_;
     float row_;
+    void setType(int t);
+    void checkDestroyed();
     int countDownTimer_;
 };
 

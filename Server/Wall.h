@@ -20,7 +20,9 @@ class Wall {
     Wall();
     void draw(Painter &) const;
     Force tick(const Ball &);
+    int points;
 public:
+    int getpts() const;
     typedef std::vector<Brick> Bricks;
     Bricks bricks_;
 };

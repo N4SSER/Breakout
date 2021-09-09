@@ -10,10 +10,10 @@
 #include "Force.h"
 #include "Ball.h"
 
-class Pedal {
+class Paddle {
 public:
     enum { WIDTH = 60 };
-    Pedal();
+    Paddle();
     void draw(Painter &) const;
     Force tick(const Ball &) const;
     void setX(int x);

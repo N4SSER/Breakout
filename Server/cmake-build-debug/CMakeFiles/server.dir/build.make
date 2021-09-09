@@ -170,18 +170,18 @@ CMakeFiles/server.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Game.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Game.cpp -o CMakeFiles/server.dir/Game.cpp.s
 
-CMakeFiles/server.dir/Pedal.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/Pedal.cpp.o: ../Pedal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/Pedal.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Pedal.cpp.o -c /home/n4ssser/Breakout/Server/Pedal.cpp
+CMakeFiles/server.dir/Paddle.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Paddle.cpp.o: ../Paddle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/Paddle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Paddle.cpp.o -c /home/n4ssser/Breakout/Server/Paddle.cpp
 
-CMakeFiles/server.dir/Pedal.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Pedal.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/Pedal.cpp > CMakeFiles/server.dir/Pedal.cpp.i
+CMakeFiles/server.dir/Paddle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Paddle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/n4ssser/Breakout/Server/Paddle.cpp > CMakeFiles/server.dir/Paddle.cpp.i
 
-CMakeFiles/server.dir/Pedal.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Pedal.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Pedal.cpp -o CMakeFiles/server.dir/Pedal.cpp.s
+CMakeFiles/server.dir/Paddle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Paddle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/n4ssser/Breakout/Server/Paddle.cpp -o CMakeFiles/server.dir/Paddle.cpp.s
 
 # Object files for target server
 server_OBJECTS = \
@@ -193,7 +193,7 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/Force.cpp.o" \
 "CMakeFiles/server.dir/Ball.cpp.o" \
 "CMakeFiles/server.dir/Game.cpp.o" \
-"CMakeFiles/server.dir/Pedal.cpp.o"
+"CMakeFiles/server.dir/Paddle.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
@@ -206,7 +206,7 @@ server: CMakeFiles/server.dir/Wall.cpp.o
 server: CMakeFiles/server.dir/Force.cpp.o
 server: CMakeFiles/server.dir/Ball.cpp.o
 server: CMakeFiles/server.dir/Game.cpp.o
-server: CMakeFiles/server.dir/Pedal.cpp.o
+server: CMakeFiles/server.dir/Paddle.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: /usr/lib/x86_64-linux-gnu/libGL.so
 server: /usr/lib/x86_64-linux-gnu/libGLU.so

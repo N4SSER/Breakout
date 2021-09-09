@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/n4ssser/Breakout/Server/Ball.cpp
+Ball.h
+/home/n4ssser/Breakout/Server/Ball.h
+Painter.h
+/home/n4ssser/Breakout/Server/Painter.h
+Wall.h
+/home/n4ssser/Breakout/Server/Wall.h
+
 /home/n4ssser/Breakout/Server/Ball.h
 Force.h
 /home/n4ssser/Breakout/Server/Force.h
@@ -26,6 +34,18 @@ Painter.h
 SocketServer.h
 /home/n4ssser/Breakout/Server/SocketServer.h
 
+/home/n4ssser/Breakout/Server/Brick.cpp
+iostream
+-
+Brick.h
+/home/n4ssser/Breakout/Server/Brick.h
+Painter.h
+/home/n4ssser/Breakout/Server/Painter.h
+Ball.h
+/home/n4ssser/Breakout/Server/Ball.h
+Game.h
+/home/n4ssser/Breakout/Server/Game.h
+
 /home/n4ssser/Breakout/Server/Brick.h
 Painter.h
 /home/n4ssser/Breakout/Server/Painter.h
@@ -36,6 +56,12 @@ Ball.h
 
 /home/n4ssser/Breakout/Server/Force.h
 
+/home/n4ssser/Breakout/Server/Game.cpp
+iostream
+-
+Game.h
+/home/n4ssser/Breakout/Server/Game.h
+
 /home/n4ssser/Breakout/Server/Game.h
 Painter.h
 /home/n4ssser/Breakout/Server/Painter.h
@@ -43,18 +69,30 @@ Ball.h
 /home/n4ssser/Breakout/Server/Ball.h
 Wall.h
 /home/n4ssser/Breakout/Server/Wall.h
-Pedal.h
-/home/n4ssser/Breakout/Server/Pedal.h
+Paddle.h
+/home/n4ssser/Breakout/Server/Paddle.h
 
-/home/n4ssser/Breakout/Server/Painter.h
+/home/n4ssser/Breakout/Server/Paddle.cpp
+Paddle.h
+/home/n4ssser/Breakout/Server/Paddle.h
+Wall.h
+/home/n4ssser/Breakout/Server/Wall.h
 
-/home/n4ssser/Breakout/Server/Pedal.h
+/home/n4ssser/Breakout/Server/Paddle.h
 Painter.h
 /home/n4ssser/Breakout/Server/Painter.h
 Force.h
 /home/n4ssser/Breakout/Server/Force.h
 Ball.h
 /home/n4ssser/Breakout/Server/Ball.h
+
+/home/n4ssser/Breakout/Server/Painter.h
+
+/home/n4ssser/Breakout/Server/SocketServer.cpp
+SocketServer.h
+/home/n4ssser/Breakout/Server/SocketServer.h
+Game.h
+/home/n4ssser/Breakout/Server/Game.h
 
 /home/n4ssser/Breakout/Server/SocketServer.h
 sys/socket.h
@@ -75,6 +113,16 @@ vector
 -
 unistd.h
 -
+
+/home/n4ssser/Breakout/Server/Wall.cpp
+cstdlib
+-
+iostream
+-
+Wall.h
+/home/n4ssser/Breakout/Server/Wall.h
+Ball.h
+/home/n4ssser/Breakout/Server/Ball.h
 
 /home/n4ssser/Breakout/Server/Wall.h
 vector

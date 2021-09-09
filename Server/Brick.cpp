@@ -1,18 +1,19 @@
 //
-// Created by n4ssser on 31/8/21.
+// Created by Nasser on 31/8/21.
 //
 
+#include <iostream>
 #include "Brick.h"
 #include "Painter.h"
 #include "Ball.h"
+#include "Game.h"
 int timesHit;
-Brick::Brick(int col, int row,int type,int hits,int point, bool deep):
+Brick::Brick(int col, int row,int type):
         col_(col),
         row_(row),
         countDownTimer_(-1){
-    this->hits=hits;
-    poinTs = point;
-    this->type = type;
+        this->type = type;
+        setType(type);
     }
 
 void Brick::draw(Painter &p) const
@@ -84,12 +85,54 @@ void Brick::destroy()
 {
         if (countDownTimer_ == -1){
             if(timesHit>hits){
-            countDownTimer_ = Painter::BLACK * 10;
-            points+=poinTs;
-            timesHit=0;
+                checkDestroyed();
             }
         }
 
 
+}
+
+void Brick::setType(int t) {
+    switch (t) {
+        case 0:
+            this->points = 10;
+            this->hits = 0;
+            break;
+        case 1:
+            this->points = 15;
+            this->hits = 2;
+            break;
+        case 2:
+            this->points = 20;
+            this->hits = 3;
+            break;
+        case 3:
+            this->points=30;
+            this->hits =1;
+            break;
+        case 4:
+            this->points=0;
+            break;
+
+    }
+}
+
+void Brick::checkDestroyed() {
+    Game* game = Game::getInstance();
+    if(type<3){
+        destroyed = true;
+        countDownTimer_ = Painter::BLACK * 10;
+        timesHit=0;
+        destroyed = false;
+    } else if(type ==3){
+        if(game->ball_.getDeepLvl() > 2){
+            destroyed = true;
+            countDownTimer_ = Painter::BLACK * 10;
+            timesHit=0;
+            destroyed =  false;
+        }
+    } else{
+        game->ball_.increaseDeep();
+    }
 }
 

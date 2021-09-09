@@ -9,13 +9,17 @@
 
 class Ball {
 public:
-    constexpr static const float DT = 0.001;
+    constexpr static const float DT = 0.0005;
     Ball();
+    void setDeepLvl(int lvl);
+    int getDeepLvl() const;
+    void increaseDeep();
     void draw(Painter &) const;
     [[nodiscard]] float x() const { return x_; }
     [[nodiscard]] float y() const { return y_; }
     void tick(Force);
 private:
+    int lvl;
     float x_;
     float y_;
     float vx_;

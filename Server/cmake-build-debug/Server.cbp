@@ -109,16 +109,16 @@
 		<Unit filename="/home/n4ssser/Breakout/Server/Game.h">
 			<Option target="server"/>
 		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Paddle.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/n4ssser/Breakout/Server/Paddle.h">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/home/n4ssser/Breakout/Server/Painter.cpp">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/n4ssser/Breakout/Server/Painter.h">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/home/n4ssser/Breakout/Server/Pedal.cpp">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/home/n4ssser/Breakout/Server/Pedal.h">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/n4ssser/Breakout/Server/SocketServer.cpp">

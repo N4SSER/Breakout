@@ -13,8 +13,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/n4ssser/Breakout/Server/Brick.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Brick.cpp.o"
   "/home/n4ssser/Breakout/Server/Force.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Force.cpp.o"
   "/home/n4ssser/Breakout/Server/Game.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Game.cpp.o"
+  "/home/n4ssser/Breakout/Server/Paddle.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Paddle.cpp.o"
   "/home/n4ssser/Breakout/Server/Painter.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Painter.cpp.o"
-  "/home/n4ssser/Breakout/Server/Pedal.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Pedal.cpp.o"
   "/home/n4ssser/Breakout/Server/SocketServer.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/SocketServer.cpp.o"
   "/home/n4ssser/Breakout/Server/Wall.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Wall.cpp.o"
   )
