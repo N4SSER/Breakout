@@ -32,9 +32,3 @@ unistd.h
 arpa/inet.h
 -
 
-/home/n4ssser/Breakout/Client/main.cpp
-iostream
--
-SocketClient.h
-/home/n4ssser/Breakout/Client/SocketClient.h
-

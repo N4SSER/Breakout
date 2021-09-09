@@ -1,1 +1,1 @@
-/usr/bin/c++ -pthread -g CMakeFiles/Client.dir/main.cpp.o CMakeFiles/Client.dir/SocketClient.cpp.o -o Client 
+/usr/bin/c++ -pthread -g CMakeFiles/Client.dir/main.cpp.o CMakeFiles/Client.dir/SocketClient.cpp.o -o Client  /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so /usr/lib/x86_64-linux-gnu/libglut.so 

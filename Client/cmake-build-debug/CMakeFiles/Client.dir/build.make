@@ -103,6 +103,9 @@ Client_EXTERNAL_OBJECTS =
 Client: CMakeFiles/Client.dir/main.cpp.o
 Client: CMakeFiles/Client.dir/SocketClient.cpp.o
 Client: CMakeFiles/Client.dir/build.make
+Client: /usr/lib/x86_64-linux-gnu/libGL.so
+Client: /usr/lib/x86_64-linux-gnu/libGLU.so
+Client: /usr/lib/x86_64-linux-gnu/libglut.so
 Client: CMakeFiles/Client.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/n4ssser/Breakout/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Client.dir/link.txt --verbose=$(VERBOSE)

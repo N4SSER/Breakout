@@ -26,6 +26,7 @@ public:
     void send_message(const char* msn);
 
 private:
+    static void ctrlC(string msg);
     int descriptor{};
     sockaddr_in info{};
     vector<int> clients;
