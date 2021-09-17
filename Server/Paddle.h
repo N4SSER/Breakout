@@ -9,10 +9,11 @@
 #include "Painter.h"
 #include "Force.h"
 #include "Ball.h"
-
+extern int WidthofPaddle;
 class Paddle {
 public:
     enum { WIDTH = 60 };
+    //int WidthofPaddle=60; //Aumentar de tamano
     Paddle();
     void draw(Painter &) const;
     Force tick(const Ball &) const;

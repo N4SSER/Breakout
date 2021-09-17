@@ -7,7 +7,9 @@
 #include "Painter.h"
 #include "Ball.h"
 #include "Game.h"
+#include "Paddle.h"
 int timesHit;
+int score;
 Brick::Brick(int col, int row,int type):
         col_(col),
         row_(row),
@@ -95,23 +97,27 @@ void Brick::destroy()
 void Brick::setType(int t) {
     switch (t) {
         case 0:
-            this->points = 10;
+            this->points = 10; //Comunes
             this->hits = 0;
             break;
         case 1:
-            this->points = 15;
+            this->points = 15; //Dobles
             this->hits = 2;
             break;
         case 2:
-            this->points = 20;
+            this->points = 20; //Triples
             this->hits = 3;
             break;
         case 3:
-            this->points=30;
+            this->points=30; //Internos
             this->hits =1;
             break;
         case 4:
-            this->points=0;
+            this->points=0; //Profundos
+            break;
+        case 5:
+            this->points=0; //Sopresas
+            this->hits=0;
             break;
 
     }
@@ -124,14 +130,44 @@ void Brick::checkDestroyed() {
         countDownTimer_ = Painter::BLACK * 10;
         timesHit=0;
         destroyed = false;
-    } else if(type ==3){
+        score=score+points;
+        std::cout<<score<<std::endl;
+    }
+    else if(type ==3){
         if(game->ball_.getDeepLvl() > 2){
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
             timesHit=0;
             destroyed =  false;
+            score= score+points;
+            std::cout<<score<<std::endl;
         }
-    } else{
+    }
+    else if(type==5){
+        int typeofSup = rand() % 2;
+        if(typeofSup==0){
+            destroyed = true;
+            countDownTimer_ = Painter::BLACK * 10;
+            timesHit=0;
+            destroyed = false;
+            score=score+points;
+            WidthofPaddle+=50;
+            std::cout<<score<<std::endl;
+            std::cout<<"Surprise1"<<std::endl;
+        }else{
+            destroyed = true;
+            countDownTimer_ = Painter::BLACK * 10;
+            timesHit=0;
+            destroyed = false;
+            score=score+points;
+            WidthofPaddle-=30;
+            std::cout<<score<<std::endl;
+            std::cout<<"Surprise2"<<std::endl;
+        }
+
+
+    }
+    else{
         game->ball_.increaseDeep();
     }
 }
