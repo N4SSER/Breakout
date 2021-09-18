@@ -80,10 +80,10 @@ void SocketServer::send_message(const char *msn) {
 
 void SocketServer::ctrlC(string msg) {
     if(msg == "a"){
-        x -=10;
+        x -=20;
     }
     if(msg == "d"){
-        x +=10;
+        x +=20;
     }
     g->setX(x);
 }

@@ -10,6 +10,7 @@
 #include "Ball.h"
 #include "Wall.h"
 #include "Paddle.h"
+#include "Brick.h"
 
 class Game {
 public:

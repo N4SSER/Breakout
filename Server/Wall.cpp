@@ -7,10 +7,11 @@
 #include "Ball.h"
 Wall::Wall()
 {
-    int nHit=2;
+    //int nHit=2;
     for (int row = 0; row < 8; ++row) {
         for (int col = 0; col < COLS_COUNT; ++col) {
-            int type = rand() % 4;
+            int type = rand() % 6;
+            std::cout<<type<<std::endl;// Para verificar que se
             bricks_.push_back(Brick(col, row,type));//Trabaje en esto para invocar a los bloques especiales y el resto de la log. ...
         }
     }

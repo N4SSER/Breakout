@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include "Game.h"
+#include "Brick.h"
+#include "Paddle.h"
 void Game::draw(Painter &p) const
 {
     wall_.draw(p);
@@ -25,7 +27,9 @@ void Game::tick()
     if (ball_.y() > Wall::HEIGHT){
         ball_ = Ball();
         ball_.setDeepLvl(0);
-        std::cout<<"Oops!"<<std::endl;}
+        std::cout<<"Oops!"<<std::endl;
+        WidthofPaddle-=10;
+    }
 }
 
 Game::Game() {
