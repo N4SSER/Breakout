@@ -9,7 +9,7 @@ void SocketClient::connect_client() {
         cout<<"Can't create the socket"<<endl;
     }
     info.sin_family =AF_INET;
-    info.sin_addr.s_addr = inet_addr("192.168.1.12");
+    info.sin_addr.s_addr = inet_addr("127.0.0.1");
     info.sin_port = ntohs(4050);
     memset(&info.sin_zero,0,sizeof(info.sin_zero));
     if(connect(descriptor,(sockaddr*)&info,(socklen_t)sizeof(info))<0){

@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/pablo/CLionProjects/Breakout/Client/SocketClient.cpp
+/home/n4ssser/Breakout/Client/SocketClient.cpp
 SocketClient.h
-/home/pablo/CLionProjects/Breakout/Client/SocketClient.h
+/home/n4ssser/Breakout/Client/SocketClient.h
 
-/home/pablo/CLionProjects/Breakout/Client/SocketClient.h
+/home/n4ssser/Breakout/Client/SocketClient.h
 sys/socket.h
 -
 sys/types.h
@@ -31,12 +31,4 @@ unistd.h
 -
 arpa/inet.h
 -
-
-/home/pablo/CLionProjects/Breakout/Client/main.cpp
-iostream
--
-GL/glut.h
--
-SocketClient.h
-/home/pablo/CLionProjects/Breakout/Client/SocketClient.h
 
