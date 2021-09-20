@@ -61,7 +61,7 @@ Force Brick::tick(const Ball &ball)
     {
         if (col_ * WIDTH + WIDTH - ball.x() + 1 > 0){
             timesHit+=1;
-            result += Force(col_ * WIDTH + WIDTH - ball.x() + 1,0);
+            result += Force(col_ * WIDTH + WIDTH - ball.x() + 1,0); //El bug tiene que ver con esto?
         }
     }
     else if (!d && u) // left
@@ -141,20 +141,25 @@ void Brick::checkDestroyed() {
             destroyed =  false;
             score= score+points;
             std::cout<<score<<std::endl;
+            std::cout<<"Es un bloque interno" <<std::endl;
+
         }
     }
     else if(type==5){
-        int typeofSup = rand() % 2;
+        int typeofSup = rand() % 4;
         if(typeofSup==0){
+            // Aumentar el tamaño de la barra de jugador
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
             timesHit=0;
             destroyed = false;
             score=score+points;
-            WidthofPaddle+=50;
+            WidthofPaddle+=30;
             std::cout<<score<<std::endl;
             std::cout<<"Surprise1"<<std::endl;
-        }else{
+        }
+        else if(typeofSup==1){
+            // Disminuir el tamaño de la barra de jugador.
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
             timesHit=0;
@@ -164,8 +169,30 @@ void Brick::checkDestroyed() {
             std::cout<<score<<std::endl;
             std::cout<<"Surprise2"<<std::endl;
         }
-
-
+        else if(typeofSup==2){
+            //Disminuir la velocidad de la bola
+            destroyed = true;
+            countDownTimer_ = Painter::BLACK * 10;
+            timesHit=0;
+            destroyed = false;
+            score=score+points;
+            ball_speed_x= 20;
+            ball_speed_y= -20;
+            std::cout<<score<<std::endl;
+            std::cout<<"Surprise3"<<std::endl;
+        }
+        else{
+            //Aumentar la velocidad de la bola
+            destroyed = true;
+            countDownTimer_ = Painter::BLACK * 10;
+            timesHit=0;
+            destroyed = false;
+            score=score+points;
+            ball_speed_x= 100;
+            ball_speed_y= -100;
+            std::cout<<score<<std::endl;
+            std::cout<<"Surprise4"<<std::endl;
+        }
     }
     else{
         game->ball_.increaseDeep();

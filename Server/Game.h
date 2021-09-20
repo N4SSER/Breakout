@@ -20,6 +20,8 @@ public:
     static Game* getInstance();
     int level{};
     Ball ball_;
+    Ball ball_1;
+    Ball ball_2; //Esta bola esta demas
 private:
     Game();
     inline static Game* gameI;

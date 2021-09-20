@@ -6,7 +6,8 @@
 #ifndef BREAKOUTLITE_BALL_H
 #define BREAKOUTLITE_BALL_H
 
-
+extern int ball_speed_x;
+extern int ball_speed_y;
 class Ball {
 public:
     constexpr static const float DT = 0.0005;

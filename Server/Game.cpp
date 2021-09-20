@@ -12,6 +12,14 @@ void Game::draw(Painter &p) const
     //for(auto& ball : balls_level)...
     ball_.draw(p);
     paddle.draw(p);
+    if(score>100)
+    {
+        ball_1.draw(p);
+    }
+    if(score>400)
+    {
+        ball_2.draw(p);
+    }
 }
 
 
@@ -29,6 +37,30 @@ void Game::tick()
         ball_.setDeepLvl(0);
         std::cout<<"Oops!"<<std::endl;
         WidthofPaddle-=10;
+    }
+    if(score>100)
+    {
+        Force f = wall_.tick(ball_1);
+        f += paddle.tick(ball_1);
+        ball_1.tick(f);
+        if (ball_1.y() > Wall::HEIGHT){
+            ball_1 = Ball();
+            ball_1.setDeepLvl(0);
+            std::cout<<"Es la bola 2 "<<std::endl;
+            WidthofPaddle-=10;
+        }
+    }
+    if(score>400)
+    {
+        Force f = wall_.tick(ball_2);
+        f += paddle.tick(ball_2);
+        ball_2.tick(f);
+        if (ball_2.y() > Wall::HEIGHT){
+            ball_2 = Ball();
+            ball_2.setDeepLvl(0);
+            std::cout<<"Es la bola 3 extra "<<std::endl;
+            WidthofPaddle-=10;
+        }
     }
 }
 
