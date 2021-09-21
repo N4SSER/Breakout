@@ -8,18 +8,11 @@
 #include "Paddle.h"
 void Game::draw(Painter &p) const
 {
+    for(auto& ball:balls ){
+        ball.draw(p);
+    }
     wall_.draw(p);
-    //for(auto& ball : balls_level)...
-    ball_.draw(p);
     paddle.draw(p);
-    if(score>100)
-    {
-        ball_1.draw(p);
-    }
-    if(score>400)
-    {
-        ball_2.draw(p);
-    }
 }
 
 
@@ -29,42 +22,28 @@ void Game::setX(int x)
 }
 void Game::tick()
 {
-    Force f = wall_.tick(ball_);
-    f += paddle.tick(ball_);
-    ball_.tick(f);
-    if (ball_.y() > Wall::HEIGHT){
-        ball_ = Ball();
-        ball_.setDeepLvl(0);
-        std::cout<<"Oops!"<<std::endl;
-        WidthofPaddle-=10;
-    }
-    if(score>100)
-    {
-        Force f = wall_.tick(ball_1);
-        f += paddle.tick(ball_1);
-        ball_1.tick(f);
-        if (ball_1.y() > Wall::HEIGHT){
-            ball_1 = Ball();
-            ball_1.setDeepLvl(0);
-            std::cout<<"Es la bola 2 "<<std::endl;
+    for(auto& ball:balls ){
+        Force f = wall_.tick(ball);
+        f += paddle.tick(ball);
+        ball.tick(f);
+        if (ball.y() > Wall::HEIGHT){
+            ball = Ball();
+            ball.setDeepLvl(0);
+            std::cout<<"Oops!"<<std::endl;
             WidthofPaddle-=10;
+            }
         }
-    }
-    if(score>400)
+    if(score>pB)
     {
-        Force f = wall_.tick(ball_2);
-        f += paddle.tick(ball_2);
-        ball_2.tick(f);
-        if (ball_2.y() > Wall::HEIGHT){
-            ball_2 = Ball();
-            ball_2.setDeepLvl(0);
-            std::cout<<"Es la bola 3 extra "<<std::endl;
-            WidthofPaddle-=10;
-        }
+        balls.push_back(ball_);
+        pB+=200;
     }
 }
 
 Game::Game() {
+
+    balls.push_back(ball_);
+    pB = 100;
 
 }
 

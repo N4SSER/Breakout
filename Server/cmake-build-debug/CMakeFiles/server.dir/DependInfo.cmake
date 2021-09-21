@@ -8,15 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pablo/CLionProjects/Breakout/Server/Ball.cpp" "/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Ball.cpp.o"
-  "/home/pablo/CLionProjects/Breakout/Server/Breakout.cpp" "/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Breakout.cpp.o"
-  "/home/pablo/CLionProjects/Breakout/Server/Brick.cpp" "/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Brick.cpp.o"
-  "/home/pablo/CLionProjects/Breakout/Server/Force.cpp" "/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Force.cpp.o"
-  "/home/pablo/CLionProjects/Breakout/Server/Game.cpp" "/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Game.cpp.o"
-  "/home/pablo/CLionProjects/Breakout/Server/Paddle.cpp" "/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Paddle.cpp.o"
-  "/home/pablo/CLionProjects/Breakout/Server/Painter.cpp" "/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Painter.cpp.o"
-  "/home/pablo/CLionProjects/Breakout/Server/SocketServer.cpp" "/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/SocketServer.cpp.o"
-  "/home/pablo/CLionProjects/Breakout/Server/Wall.cpp" "/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Wall.cpp.o"
+  "/home/n4ssser/Breakout/Server/Ball.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Ball.cpp.o"
+  "/home/n4ssser/Breakout/Server/Breakout.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Breakout.cpp.o"
+  "/home/n4ssser/Breakout/Server/Brick.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Brick.cpp.o"
+  "/home/n4ssser/Breakout/Server/Force.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Force.cpp.o"
+  "/home/n4ssser/Breakout/Server/Game.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Game.cpp.o"
+  "/home/n4ssser/Breakout/Server/Paddle.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Paddle.cpp.o"
+  "/home/n4ssser/Breakout/Server/Painter.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Painter.cpp.o"
+  "/home/n4ssser/Breakout/Server/SocketServer.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/SocketServer.cpp.o"
+  "/home/n4ssser/Breakout/Server/Wall.cpp" "/home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles/server.dir/Wall.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

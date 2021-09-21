@@ -5,7 +5,7 @@
 #ifndef BREAKOUTLITE_GAME_H
 #define BREAKOUTLITE_GAME_H
 
-
+#include <list>
 #include "Painter.h"
 #include "Ball.h"
 #include "Wall.h"
@@ -20,10 +20,10 @@ public:
     static Game* getInstance();
     int level{};
     Ball ball_;
-    Ball ball_1;
-    Ball ball_2; //Esta bola esta demas
 private:
+    std:: list<Ball> balls;
     Game();
+    int pB;
     inline static Game* gameI;
     Wall wall_;
     Paddle paddle;
