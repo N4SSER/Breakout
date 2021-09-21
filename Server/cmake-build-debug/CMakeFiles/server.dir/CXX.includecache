@@ -12,20 +12,6 @@ Force.h
 Painter.h
 /home/n4ssser/Breakout/Server/Painter.h
 
-/home/n4ssser/Breakout/Server/Brick.cpp
-iostream
--
-Brick.h
-/home/n4ssser/Breakout/Server/Brick.h
-Painter.h
-/home/n4ssser/Breakout/Server/Painter.h
-Ball.h
-/home/n4ssser/Breakout/Server/Ball.h
-Game.h
-/home/n4ssser/Breakout/Server/Game.h
-Paddle.h
-/home/n4ssser/Breakout/Server/Paddle.h
-
 /home/n4ssser/Breakout/Server/Brick.h
 Painter.h
 /home/n4ssser/Breakout/Server/Painter.h
@@ -36,7 +22,19 @@ Ball.h
 
 /home/n4ssser/Breakout/Server/Force.h
 
+/home/n4ssser/Breakout/Server/Game.cpp
+iostream
+-
+Game.h
 /home/n4ssser/Breakout/Server/Game.h
+Brick.h
+/home/n4ssser/Breakout/Server/Brick.h
+Paddle.h
+/home/n4ssser/Breakout/Server/Paddle.h
+
+/home/n4ssser/Breakout/Server/Game.h
+list
+-
 Painter.h
 /home/n4ssser/Breakout/Server/Painter.h
 Ball.h

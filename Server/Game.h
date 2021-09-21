@@ -5,7 +5,7 @@
 #ifndef BREAKOUTLITE_GAME_H
 #define BREAKOUTLITE_GAME_H
 
-
+#include <list>
 #include "Painter.h"
 #include "Ball.h"
 #include "Wall.h"
@@ -21,7 +21,9 @@ public:
     int level{};
     Ball ball_;
 private:
+    std:: list<Ball> balls;
     Game();
+    int pB;
     inline static Game* gameI;
     Wall wall_;
     Paddle paddle;

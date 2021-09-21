@@ -22,7 +22,7 @@ class Wall {
     Force tick(const Ball &);
     int points;
 public:
-    int getpts() const;
+    int getpts() const; //No actualiza bien los puntos ??
     typedef std::vector<Brick> Bricks;
     Bricks bricks_;
 };

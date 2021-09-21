@@ -42,7 +42,7 @@ Force Wall::tick(const Ball &ball)
         if (f.x != 0 || f.y != 0)
             brick . destroy();
             if(brick.destroyed){
-                points +=brick.points;
+                points +=brick.points; //Esta variable no funciona siempre da cero?
                 getpts();
             }
     }
