@@ -20,6 +20,7 @@ public:
     static Game* getInstance();
     int level{};
     Ball ball_;
+    void Set_Deep(bool state);
 private:
     std:: list<Ball> balls;
     Game();

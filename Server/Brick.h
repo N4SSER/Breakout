@@ -8,6 +8,7 @@
 #include "Force.h"
 #include "Ball.h"
 extern int score;
+extern bool  deepState;;
 class Brick {
 public:
     enum { WIDTH = 25,
@@ -17,7 +18,6 @@ public:
     void destroy();
     Force tick(const Ball &);
     int points;
-
     bool destroyed= false;
 private:
     int hits;

@@ -5,7 +5,11 @@
 #include "Paddle.h"
 #include "Wall.h"
 int WidthofPaddle=200;
-Paddle::Paddle(): x_(Wall::WIDTH / 2) {}
+Paddle::Paddle()
+{
+    x_= (Wall::WIDTH / 2);
+
+}
 
 void Paddle::draw(Painter &p) const
 {

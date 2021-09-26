@@ -20,6 +20,11 @@ void Game::setX(int x)
 {
     paddle.setX(x);
 }
+
+void Game::Set_Deep(bool state)
+{
+    deepState=state;
+}
 void Game::tick()
 {
     for(auto& ball:balls ){
@@ -28,7 +33,7 @@ void Game::tick()
         ball.tick(f);
         if (ball.y() > Wall::HEIGHT){
             ball = Ball();
-            ball.setDeepLvl(0);
+            ball.setDeepLvl(0); //No actualiza correctamente
             std::cout<<"Oops!"<<std::endl;
             WidthofPaddle-=10;
             }

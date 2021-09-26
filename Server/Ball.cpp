@@ -40,7 +40,6 @@ void Ball::tick(Force f)
 
 void Ball::setDeepLvl(int lvl) {
     this->lvl = lvl;
-
 }
 
 int Ball::getDeepLvl() const {

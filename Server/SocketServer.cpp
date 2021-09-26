@@ -4,6 +4,7 @@
 SocketServer::SocketServer() {}
 Game* g = Game::getInstance();
 int x = Wall::WIDTH/2;
+bool state=false;
 bool SocketServer::create_socket() {
     descriptor = socket(AF_INET,SOCK_STREAM,IPPROTO_TCP);
     if(descriptor<0){
@@ -82,9 +83,19 @@ void SocketServer::ctrlC(string msg) {
     if(msg == "a"){
         x -=20;
     }
-    if(msg == "d"){
+    if(msg == "d")
+    {
         x +=20;
+
+    }
+    if(msg == "w"){ //Activar modo profundo
+        state=true;
+    }
+    if(msg== "s") //Desactivar modo profundo
+    {
+        state=false;
     }
     g->setX(x);
+    g->Set_Deep(state);
 }
 

@@ -18,6 +18,14 @@ void KeyPressed(unsigned char Key, int x, int y){
     if(Key == 'd'){
         client->send_message("d");
     }
+    if(Key == 'w')
+    {
+        client->send_message("w");
+    }
+    if(Key == 's')
+    {
+        client->send_message("s");
+    }
 }
 int main(int argc, char **argv) {
     client = new SocketClient;

@@ -10,6 +10,7 @@
 #include "Paddle.h"
 int timesHit;
 int score;
+bool deepState=false;
 Brick::Brick(int col, int row,int type):
         col_(col),
         row_(row),
@@ -22,7 +23,31 @@ void Brick::draw(Painter &p) const
 {
     if (countDownTimer_ == -1)
     {
-        p.setColor(static_cast<Painter::Color>(row_ /2));
+        if(type==0)
+        {
+            p.setColor(Painter::WHITE);
+        }
+        if(type==1)
+        {
+            p.setColor(Painter::BLACK);
+        }
+        if(type==2)
+        {
+            p.setColor(Painter::GREEN);
+        }
+        if(type==3)
+        {
+            p.setColor(Painter::ORANGE);
+        }
+        if(type==4)
+        {
+            p.setColor(Painter::RED);
+        }
+        if(type==5)
+        {
+            p.setColor(Painter::YELLOW);
+        }
+
         p.bar(col_ * WIDTH + 3, row_ * HEIGHT + 3,
               (col_ + 1) * WIDTH - 1, (row_ + 1) * HEIGHT - 1);
     }
@@ -50,37 +75,45 @@ Force Brick::tick(const Ball &ball)
                (ball.x() - col_ * WIDTH) * HEIGHT;
     bool d = f1 < 0;
     bool u = f2 < 0;
-
-    if (d && u) // top
+    if(!deepState)
     {
-        if (row_ * HEIGHT - ball.y() - 1 < 0 ){
-            timesHit+=1;
-            result += Force(0, row_ * HEIGHT - ball.y() - 1);}
-    }
-    else if (d && !u) // right
-    {
-        if (col_ * WIDTH + WIDTH - ball.x() + 1 > 0){
-            timesHit+=1;
-            result += Force(col_ * WIDTH + WIDTH - ball.x() + 1,0); //El bug tiene que ver con esto?
+        if (d && u) // top
+        {
+            if (row_ * HEIGHT - ball.y() - 1 < 0 ){
+                timesHit+=1;
+                result += Force(0, row_ * HEIGHT - ball.y() - 1);
+            }
         }
-    }
-    else if (!d && u) // left
-    {
-        if (col_ * WIDTH - ball.x() - 1 < 0){
-            timesHit+=1;
-            result += Force(0, col_ * WIDTH - ball.x() - 1);
+        else if (d && !u) // right
+        {
+            if (col_ * WIDTH + WIDTH - ball.x() + 1 > 0){
+                timesHit+=1;
+                result += Force(col_ * WIDTH + WIDTH - ball.x() + 1,0);
+            }
         }
-    }
-    else
-    {
-        if (row_ * HEIGHT + HEIGHT - ball.y() + 1 > 0){
-            timesHit+=1;
-            result += Force(0, row_ * HEIGHT + HEIGHT - ball.y() + 1);
+        else if (!d && u) // left
+        {
+            if (col_ * WIDTH - ball.x() - 1 < 0){
+                timesHit+=1;
+                result += Force(0, col_ * WIDTH - ball.x() - 1);
+            }
+        }
+        else
+        {
+            //Down
+            if (row_ * HEIGHT + HEIGHT - ball.y() + 1 > 0){
+                timesHit+=1;
+                result += Force(0, row_ * HEIGHT + HEIGHT - ball.y() + 1);
+
+            }
 
         }
-
+        return result;
     }
-    return result;
+    else{ //Falta continuar con la logica de saltar los bloques y filas
+        return result;
+    }
+
 }
 
 void Brick::destroy()
@@ -93,7 +126,6 @@ void Brick::destroy()
 
 
 }
-
 void Brick::setType(int t) {
     switch (t) {
         case 0:
@@ -142,7 +174,6 @@ void Brick::checkDestroyed() {
             score= score+points;
             std::cout<<score<<std::endl;
             std::cout<<"Es un bloque interno" <<std::endl;
-
         }
     }
     else if(type==5){
@@ -198,4 +229,3 @@ void Brick::checkDestroyed() {
         game->ball_.increaseDeep();
     }
 }
-

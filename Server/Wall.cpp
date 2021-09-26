@@ -11,8 +11,7 @@ Wall::Wall()
     for (int row = 0; row < 8; ++row) {
         for (int col = 0; col < COLS_COUNT; ++col) {
             int type = rand() % 6;
-            std::cout<<type<<std::endl;// Para verificar que se
-            bricks_.push_back(Brick(col, row,type));//Trabaje en esto para invocar a los bloques especiales y el resto de la log. ...
+            bricks_.push_back(Brick(col, row,type));
         }
     }
 }
@@ -42,7 +41,7 @@ Force Wall::tick(const Ball &ball)
         if (f.x != 0 || f.y != 0)
             brick . destroy();
             if(brick.destroyed){
-                points +=brick.points; //Esta variable no funciona siempre da cero?
+                points +=brick.points;
                 getpts();
             }
     }
