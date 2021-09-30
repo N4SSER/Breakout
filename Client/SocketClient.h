@@ -39,6 +39,7 @@ private:
     int descriptor;
     sockaddr_in info;
     /**
+     * @public
      * @brief Metodo que el controlador del Cliente
      * @param obj
      * @authors Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo
