@@ -45,6 +45,7 @@ public:
      * @brief Hace un get de los puntos del jugador
      * @authors Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo
      */
+
     int getpts() const;
     typedef std::vector<Brick> Bricks;
     Bricks bricks_;
