@@ -1,0 +1,120 @@
+\hypertarget{classGame}{}\doxysection{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+
+
+Collaboration diagram for Game\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGame_a8f07e972ea9c25e51d2c200d173e551c}{draw}} (\mbox{\hyperlink{classPainter}{Painter}} \&) const
+\begin{DoxyCompactList}\small\item\em Metodo el cual se encarga de dibujar a las clases de \mbox{\hyperlink{classBall}{Ball}}, \mbox{\hyperlink{classWall}{Wall}} y de \mbox{\hyperlink{classPaddle}{Paddle}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a074fd49963ad525ad7027eacdb87a5cb}{setX}} (int x)
+\begin{DoxyCompactList}\small\item\em Metodo que hace un set de la posicion X de la barra del jugador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_adf1634a2d0c22f30f7c57e72fd2831bc}{tick}} ()
+\begin{DoxyCompactList}\small\item\em Metodo que actualiza la informacion de las clases \mbox{\hyperlink{classPaddle}{Paddle}}, \mbox{\hyperlink{classWall}{Wall}}, \mbox{\hyperlink{classBrick}{Brick}} y \mbox{\hyperlink{classBall}{Ball}}, ademas verifica que cuando una bola sale por la parte inferior de la pantalla se disminuya el tamaño de la barra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a1c18724e8ef5322dad29bf39688999a7}{Set\+\_\+\+Deep}} (bool state)
+\begin{DoxyCompactList}\small\item\em Metodo sencillo que maneja el estado de profundidad de las bolas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGame}{Game}} $\ast$ \mbox{\hyperlink{classGame_a19798a4f4c50037e1c5cd8c5d491fef9}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Singleton de la instancia del juego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGame_abe14118bc7cb70c342636c2b2a15554b}\label{classGame_abe14118bc7cb70c342636c2b2a15554b}} 
+int {\bfseries level} \{\}
+\item 
+\mbox{\Hypertarget{classGame_a3c10d79f000b572be7f558de9aeee391}\label{classGame_a3c10d79f000b572be7f558de9aeee391}} 
+\mbox{\hyperlink{classBall}{Ball}} {\bfseries ball\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_a8f07e972ea9c25e51d2c200d173e551c}\label{classGame_a8f07e972ea9c25e51d2c200d173e551c}} 
+\index{Game@{Game}!draw@{draw}}
+\index{draw@{draw}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Game\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPainter}{Painter}} \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Metodo el cual se encarga de dibujar a las clases de \mbox{\hyperlink{classBall}{Ball}}, \mbox{\hyperlink{classWall}{Wall}} y de \mbox{\hyperlink{classPaddle}{Paddle}}. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classPainter}{Painter}}} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a19798a4f4c50037e1c5cd8c5d491fef9}\label{classGame_a19798a4f4c50037e1c5cd8c5d491fef9}} 
+\index{Game@{Game}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame}{Game}} $\ast$ Game\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Singleton de la instancia del juego. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classGame_a1c18724e8ef5322dad29bf39688999a7}\label{classGame_a1c18724e8ef5322dad29bf39688999a7}} 
+\index{Game@{Game}!Set\_Deep@{Set\_Deep}}
+\index{Set\_Deep@{Set\_Deep}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Set\_Deep()}{Set\_Deep()}}
+{\footnotesize\ttfamily void Game\+::\+Set\+\_\+\+Deep (\begin{DoxyParamCaption}\item[{bool}]{state }\end{DoxyParamCaption})}
+
+
+
+Metodo sencillo que maneja el estado de profundidad de las bolas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Establece el estado de profundidad es decir si es true el modo profundidad esta activado y si es falso el modo profundidad esta desactivado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classGame_a074fd49963ad525ad7027eacdb87a5cb}\label{classGame_a074fd49963ad525ad7027eacdb87a5cb}} 
+\index{Game@{Game}!setX@{setX}}
+\index{setX@{setX}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Game\+::setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Metodo que hace un set de la posicion X de la barra del jugador. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & x Posicion x \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_adf1634a2d0c22f30f7c57e72fd2831bc}\label{classGame_adf1634a2d0c22f30f7c57e72fd2831bc}} 
+\index{Game@{Game}!tick@{tick}}
+\index{tick@{tick}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void Game\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo que actualiza la informacion de las clases \mbox{\hyperlink{classPaddle}{Paddle}}, \mbox{\hyperlink{classWall}{Wall}}, \mbox{\hyperlink{classBrick}{Brick}} y \mbox{\hyperlink{classBall}{Ball}}, ademas verifica que cuando una bola sale por la parte inferior de la pantalla se disminuya el tamaño de la barra. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Game_8h}{Game.\+h}}\item 
+Game.\+cpp\end{DoxyCompactItemize}

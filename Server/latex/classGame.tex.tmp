@@ -1,0 +1,42 @@
+\hypertarget{classGame}{}\doxysection{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+
+
+Collaboration diagram for Game\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGame_a8f07e972ea9c25e51d2c200d173e551c}\label{classGame_a8f07e972ea9c25e51d2c200d173e551c}} 
+void {\bfseries draw} (\mbox{\hyperlink{classPainter}{Painter}} \&) const
+\item 
+\mbox{\Hypertarget{classGame_a074fd49963ad525ad7027eacdb87a5cb}\label{classGame_a074fd49963ad525ad7027eacdb87a5cb}} 
+void {\bfseries setX} (int x)
+\item 
+\mbox{\Hypertarget{classGame_adf1634a2d0c22f30f7c57e72fd2831bc}\label{classGame_adf1634a2d0c22f30f7c57e72fd2831bc}} 
+void {\bfseries tick} ()
+\item 
+\mbox{\Hypertarget{classGame_a1c18724e8ef5322dad29bf39688999a7}\label{classGame_a1c18724e8ef5322dad29bf39688999a7}} 
+void {\bfseries Set\+\_\+\+Deep} (bool state)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGame_a19798a4f4c50037e1c5cd8c5d491fef9}\label{classGame_a19798a4f4c50037e1c5cd8c5d491fef9}} 
+static \mbox{\hyperlink{classGame}{Game}} $\ast$ {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGame_abe14118bc7cb70c342636c2b2a15554b}\label{classGame_abe14118bc7cb70c342636c2b2a15554b}} 
+int {\bfseries level} \{\}
+\item 
+\mbox{\Hypertarget{classGame_a3c10d79f000b572be7f558de9aeee391}\label{classGame_a3c10d79f000b572be7f558de9aeee391}} 
+\mbox{\hyperlink{classBall}{Ball}} {\bfseries ball\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game.\+h\item 
+Game.\+cpp\end{DoxyCompactItemize}

@@ -6,11 +6,47 @@
 
 #IncludeRegexTransform: 
 
+/home/pablo/CLionProjects/Breakout/Server/Ball.cpp
+Ball.h
+/home/pablo/CLionProjects/Breakout/Server/Ball.h
+Painter.h
+/home/pablo/CLionProjects/Breakout/Server/Painter.h
+Wall.h
+/home/pablo/CLionProjects/Breakout/Server/Wall.h
+
 /home/pablo/CLionProjects/Breakout/Server/Ball.h
 Force.h
 /home/pablo/CLionProjects/Breakout/Server/Force.h
 Painter.h
 /home/pablo/CLionProjects/Breakout/Server/Painter.h
+
+/home/pablo/CLionProjects/Breakout/Server/Breakout.cpp
+GL/glut.h
+-
+iostream
+-
+Game.h
+/home/pablo/CLionProjects/Breakout/Server/Game.h
+Wall.h
+/home/pablo/CLionProjects/Breakout/Server/Wall.h
+Painter.h
+/home/pablo/CLionProjects/Breakout/Server/Painter.h
+SocketServer.h
+/home/pablo/CLionProjects/Breakout/Server/SocketServer.h
+
+/home/pablo/CLionProjects/Breakout/Server/Brick.cpp
+iostream
+-
+Brick.h
+/home/pablo/CLionProjects/Breakout/Server/Brick.h
+Painter.h
+/home/pablo/CLionProjects/Breakout/Server/Painter.h
+Ball.h
+/home/pablo/CLionProjects/Breakout/Server/Ball.h
+Game.h
+/home/pablo/CLionProjects/Breakout/Server/Game.h
+Paddle.h
+/home/pablo/CLionProjects/Breakout/Server/Paddle.h
 
 /home/pablo/CLionProjects/Breakout/Server/Brick.h
 Painter.h
@@ -21,6 +57,16 @@ Ball.h
 /home/pablo/CLionProjects/Breakout/Server/Ball.h
 
 /home/pablo/CLionProjects/Breakout/Server/Force.h
+
+/home/pablo/CLionProjects/Breakout/Server/Game.cpp
+iostream
+-
+Game.h
+/home/pablo/CLionProjects/Breakout/Server/Game.h
+Brick.h
+/home/pablo/CLionProjects/Breakout/Server/Brick.h
+Paddle.h
+/home/pablo/CLionProjects/Breakout/Server/Paddle.h
 
 /home/pablo/CLionProjects/Breakout/Server/Game.h
 list
@@ -35,6 +81,12 @@ Paddle.h
 /home/pablo/CLionProjects/Breakout/Server/Paddle.h
 Brick.h
 /home/pablo/CLionProjects/Breakout/Server/Brick.h
+
+/home/pablo/CLionProjects/Breakout/Server/Paddle.cpp
+Paddle.h
+/home/pablo/CLionProjects/Breakout/Server/Paddle.h
+Wall.h
+/home/pablo/CLionProjects/Breakout/Server/Wall.h
 
 /home/pablo/CLionProjects/Breakout/Server/Paddle.h
 Painter.h
@@ -71,6 +123,16 @@ vector
 -
 unistd.h
 -
+
+/home/pablo/CLionProjects/Breakout/Server/Wall.cpp
+cstdlib
+-
+iostream
+-
+Wall.h
+/home/pablo/CLionProjects/Breakout/Server/Wall.h
+Ball.h
+/home/pablo/CLionProjects/Breakout/Server/Ball.h
 
 /home/pablo/CLionProjects/Breakout/Server/Wall.h
 vector

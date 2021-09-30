@@ -67,7 +67,6 @@ Force Brick::tick(const Ball &ball)
         return {0, 0};
     if (countDownTimer_ > 0)
         --countDownTimer_;
-
     Force result(0, 0);
     float f1 = (ball.y() - row_ * HEIGHT) * WIDTH -
                (ball.x() - col_ * WIDTH) * HEIGHT;
@@ -110,7 +109,8 @@ Force Brick::tick(const Ball &ball)
         }
         return result;
     }
-    else{ //Falta continuar con la logica de saltar los bloques y filas
+    //Modo profundidad activado
+    else{
         return result;
     }
 
@@ -162,8 +162,8 @@ void Brick::checkDestroyed() {
         countDownTimer_ = Painter::BLACK * 10;
         timesHit=0;
         destroyed = false;
-        score=score+points;
-        std::cout<<score<<std::endl;
+        //score=score+points;
+        //std::cout<<score<<std::endl;
     }
     else if(type ==3){
         if(game->ball_.getDeepLvl() > 2){
@@ -172,8 +172,8 @@ void Brick::checkDestroyed() {
             timesHit=0;
             destroyed =  false;
             score= score+points;
-            std::cout<<score<<std::endl;
-            std::cout<<"Es un bloque interno" <<std::endl;
+            //std::cout<<score<<std::endl;
+            //std::cout<<"Es un bloque interno" <<std::endl;
         }
     }
     else if(type==5){
@@ -186,8 +186,8 @@ void Brick::checkDestroyed() {
             destroyed = false;
             score=score+points;
             WidthofPaddle+=30;
-            std::cout<<score<<std::endl;
-            std::cout<<"Surprise1"<<std::endl;
+            //std::cout<<score<<std::endl;
+            //std::cout<<"Surprise1"<<std::endl;
         }
         else if(typeofSup==1){
             // Disminuir el tamaño de la barra de jugador.
@@ -197,8 +197,8 @@ void Brick::checkDestroyed() {
             destroyed = false;
             score=score+points;
             WidthofPaddle-=30;
-            std::cout<<score<<std::endl;
-            std::cout<<"Surprise2"<<std::endl;
+            //std::cout<<score<<std::endl;
+            //std::cout<<"Surprise2"<<std::endl;
         }
         else if(typeofSup==2){
             //Disminuir la velocidad de la bola
@@ -209,8 +209,8 @@ void Brick::checkDestroyed() {
             score=score+points;
             ball_speed_x= 20;
             ball_speed_y= -20;
-            std::cout<<score<<std::endl;
-            std::cout<<"Surprise3"<<std::endl;
+            //std::cout<<score<<std::endl;
+            //std::cout<<"Surprise3"<<std::endl;
         }
         else{
             //Aumentar la velocidad de la bola
@@ -221,8 +221,8 @@ void Brick::checkDestroyed() {
             score=score+points;
             ball_speed_x= 100;
             ball_speed_y= -100;
-            std::cout<<score<<std::endl;
-            std::cout<<"Surprise4"<<std::endl;
+            //std::cout<<score<<std::endl;
+            //std::cout<<"Surprise4"<<std::endl;
         }
     }
     else{

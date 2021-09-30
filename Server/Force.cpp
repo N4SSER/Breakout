@@ -1,7 +1,3 @@
-//
-// Created by Nasser on 31/8/21.
-//
-
 #include "Force.h"
 Force::Force(float ax, float ay): x(ax), y(ay) {}
 

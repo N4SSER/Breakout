@@ -1,0 +1,100 @@
+\hypertarget{classSocketServer}{}\doxysection{Socket\+Server Class Reference}
+\label{classSocketServer}\index{SocketServer@{SocketServer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSocketServer_afac9dc85dd014e6288551aa49f74f63f}{run}} ()
+\begin{DoxyCompactList}\small\item\em Primero espera a que se conecte un cliente, luego cuando se conecta un cliente este cliente es almacenado en un vector de clientes, ademas crea los hilos de los clientes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSocketServer_afc3554afa0a23d9df121a9c18a812256}\label{classSocketServer_afc3554afa0a23d9df121a9c18a812256}} 
+void {\bfseries send\+\_\+message} (const char $\ast$msn)
+\item 
+bool \mbox{\hyperlink{classSocketServer_ad562f6e83df4dfd22e5fb9b40c5a94cf}{create\+\_\+socket}} ()
+\begin{DoxyCompactList}\small\item\em Crea el socket. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSocketServer_a1c96e27e46a10fb1f2da4e4b0ff701cc}{link\+\_\+kernel}} ()
+\begin{DoxyCompactList}\small\item\em Crea el link al kernel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classSocketServer_a8839fb721be8a276711a0950d65c0683}{ctrlC}} (string msg)
+\begin{DoxyCompactList}\small\item\em Recibe los mensaje enviados por el cliente, luego este los interpreta si son la tecla indicada para convetir esta tecla a un evento en el juego. \end{DoxyCompactList}\item 
+static void $\ast$ \mbox{\hyperlink{classSocketServer_ae8a068705c8b59bc6c53e8d05422b03e}{client\+\_\+controller}} (void $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Metodo que controlo los mensajes del cliente, ademas lee e interpreta estos mensajes mandados por el cliente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSocketServer_ae8a068705c8b59bc6c53e8d05422b03e}\label{classSocketServer_ae8a068705c8b59bc6c53e8d05422b03e}} 
+\index{SocketServer@{SocketServer}!client\_controller@{client\_controller}}
+\index{client\_controller@{client\_controller}!SocketServer@{SocketServer}}
+\doxysubsubsection{\texorpdfstring{client\_controller()}{client\_controller()}}
+{\footnotesize\ttfamily void $\ast$ Socket\+Server\+::client\+\_\+controller (\begin{DoxyParamCaption}\item[{void $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que controlo los mensajes del cliente, ademas lee e interpreta estos mensajes mandados por el cliente. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classSocketServer_ad562f6e83df4dfd22e5fb9b40c5a94cf}\label{classSocketServer_ad562f6e83df4dfd22e5fb9b40c5a94cf}} 
+\index{SocketServer@{SocketServer}!create\_socket@{create\_socket}}
+\index{create\_socket@{create\_socket}!SocketServer@{SocketServer}}
+\doxysubsubsection{\texorpdfstring{create\_socket()}{create\_socket()}}
+{\footnotesize\ttfamily bool Socket\+Server\+::create\+\_\+socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea el socket. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classSocketServer_a8839fb721be8a276711a0950d65c0683}\label{classSocketServer_a8839fb721be8a276711a0950d65c0683}} 
+\index{SocketServer@{SocketServer}!ctrlC@{ctrlC}}
+\index{ctrlC@{ctrlC}!SocketServer@{SocketServer}}
+\doxysubsubsection{\texorpdfstring{ctrlC()}{ctrlC()}}
+{\footnotesize\ttfamily void Socket\+Server\+::ctrlC (\begin{DoxyParamCaption}\item[{string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Recibe los mensaje enviados por el cliente, luego este los interpreta si son la tecla indicada para convetir esta tecla a un evento en el juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Mesaje enviado por el cliente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classSocketServer_a1c96e27e46a10fb1f2da4e4b0ff701cc}\label{classSocketServer_a1c96e27e46a10fb1f2da4e4b0ff701cc}} 
+\index{SocketServer@{SocketServer}!link\_kernel@{link\_kernel}}
+\index{link\_kernel@{link\_kernel}!SocketServer@{SocketServer}}
+\doxysubsubsection{\texorpdfstring{link\_kernel()}{link\_kernel()}}
+{\footnotesize\ttfamily bool Socket\+Server\+::link\+\_\+kernel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea el link al kernel. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classSocketServer_afac9dc85dd014e6288551aa49f74f63f}\label{classSocketServer_afac9dc85dd014e6288551aa49f74f63f}} 
+\index{SocketServer@{SocketServer}!run@{run}}
+\index{run@{run}!SocketServer@{SocketServer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Socket\+Server\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Primero espera a que se conecte un cliente, luego cuando se conecta un cliente este cliente es almacenado en un vector de clientes, ademas crea los hilos de los clientes. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{SocketServer_8h}{Socket\+Server.\+h}}\item 
+Socket\+Server.\+cpp\end{DoxyCompactItemize}
