@@ -31,7 +31,7 @@ public:
     void draw(Painter &) const;
     /**
      * @brief Verifica la colisiones que sucede entre la barra del jugador y las bolas y cuando se detecta una colision
-     * hace la bola rebote hacia arriba.
+     * hace que la bola rebote hacia arriba.
      * @authors Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo
      * @return Fuerza resultante
      */

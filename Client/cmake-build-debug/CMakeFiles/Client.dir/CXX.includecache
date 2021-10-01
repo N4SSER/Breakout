@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/pablo/CLionProjects/Breakout/Client/SocketClient.cpp
+SocketClient.h
+/home/pablo/CLionProjects/Breakout/Client/SocketClient.h
+
 /home/pablo/CLionProjects/Breakout/Client/SocketClient.h
 sys/socket.h
 -

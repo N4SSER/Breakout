@@ -29,7 +29,7 @@ public:
      */
     void connect_client();
     /**
-     * @brief Metodo que mando los mensajes del Cliente al Servidor
+     * @brief Metodo que manda los mensajes del Cliente al Servidor
      * @param msn
      * @authors Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo
      */
@@ -40,7 +40,7 @@ private:
     sockaddr_in info;
     /**
      * @public
-     * @brief Metodo que el controlador del Cliente
+     * @brief Metodo controlador del Cliente
      * @param obj
      * @authors Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo
      */

@@ -29,7 +29,7 @@ public:
     /**
      * @authors Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo
      * @brief Metodo el cual se encarga de dibujar los bloques en pantalla
-     * @param Painter
+     * @param Painter Objeto de tipo painter
      */
     void draw(Painter &) const;
     /**

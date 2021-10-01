@@ -43,7 +43,7 @@ public:
     /**
      *
      * @authors Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo
-     * @brief Esta metodo dibuja la bola
+     * @brief Esta metodo dibuja la bola en la interfaz grafica
      * @date 9/30/2021
      * @param Painter Esta parametro sirve para dibujar la bola en pantalla
      */
