@@ -1,0 +1,107 @@
+\hypertarget{classWall}{}\doxysection{Wall Class Reference}
+\label{classWall}\index{Wall@{Wall}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWall_a101058b0a737e0028d1ede51f3607f9d}\label{classWall_a101058b0a737e0028d1ede51f3607f9d}} 
+enum \{ {\bfseries R\+O\+W\+S\+\_\+\+C\+O\+U\+NT} = 16, 
+{\bfseries C\+O\+L\+S\+\_\+\+C\+O\+U\+NT} = 8 $\ast$ 3
+ \}
+\item 
+\mbox{\Hypertarget{classWall_a6cd04f77d1f5f3ae79654c577fcdfc7e}\label{classWall_a6cd04f77d1f5f3ae79654c577fcdfc7e}} 
+enum \{ {\bfseries W\+I\+D\+TH} = R\+O\+W\+S\+\_\+\+C\+O\+U\+NT $\ast$ Brick\+::W\+I\+D\+TH, 
+{\bfseries H\+E\+I\+G\+HT} = C\+O\+L\+S\+\_\+\+C\+O\+U\+NT $\ast$ Brick\+::H\+E\+I\+G\+HT
+ \}
+\item 
+\mbox{\Hypertarget{classWall_a4858ac7d10044103a238bdfe19009849}\label{classWall_a4858ac7d10044103a238bdfe19009849}} 
+typedef std\+::vector$<$ \mbox{\hyperlink{classBrick}{Brick}} $>$ {\bfseries Bricks}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWall_a12dc41bc7bc045c55ec1034a43e52043}{Wall}} ()
+\begin{DoxyCompactList}\small\item\em Este constructor contiene y crea el Vector de Bricks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWall_a4246f2f94b8e8beb25c8d35d26067914}{draw}} (\mbox{\hyperlink{classPainter}{Painter}} \&) const
+\begin{DoxyCompactList}\small\item\em Este metodo primero recorre la el vector de Bricks para que cada uno sea dibujado en pantalla. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structForce}{Force}} \mbox{\hyperlink{classWall_ae7bc366f383e720f2b1f1c038b543025}{tick}} (const \mbox{\hyperlink{classBall}{Ball}} \&)
+\begin{DoxyCompactList}\small\item\em Se chequea las colisiones de las bola con los bricks. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWall_afc15cfc801904b4a95af66d85fee242a}{getpts}} () const
+\begin{DoxyCompactList}\small\item\em Hace un get de los puntos del jugador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWall_aca7e561cb8dffaf4bfe3019dacee1e30}\label{classWall_aca7e561cb8dffaf4bfe3019dacee1e30}} 
+int {\bfseries points}
+\item 
+\mbox{\Hypertarget{classWall_ab98979d06147f5ae3a36bed23e675591}\label{classWall_ab98979d06147f5ae3a36bed23e675591}} 
+Bricks {\bfseries bricks\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWall_a12dc41bc7bc045c55ec1034a43e52043}\label{classWall_a12dc41bc7bc045c55ec1034a43e52043}} 
+\index{Wall@{Wall}!Wall@{Wall}}
+\index{Wall@{Wall}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{Wall()}{Wall()}}
+{\footnotesize\ttfamily Wall\+::\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Este constructor contiene y crea el Vector de Bricks. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWall_a4246f2f94b8e8beb25c8d35d26067914}\label{classWall_a4246f2f94b8e8beb25c8d35d26067914}} 
+\index{Wall@{Wall}!draw@{draw}}
+\index{draw@{draw}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Wall\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPainter}{Painter}} \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Este metodo primero recorre la el vector de Bricks para que cada uno sea dibujado en pantalla. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classPainter}{Painter}}} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWall_afc15cfc801904b4a95af66d85fee242a}\label{classWall_afc15cfc801904b4a95af66d85fee242a}} 
+\index{Wall@{Wall}!getpts@{getpts}}
+\index{getpts@{getpts}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{getpts()}{getpts()}}
+{\footnotesize\ttfamily int Wall\+::getpts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Hace un get de los puntos del jugador. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classWall_ae7bc366f383e720f2b1f1c038b543025}\label{classWall_ae7bc366f383e720f2b1f1c038b543025}} 
+\index{Wall@{Wall}!tick@{tick}}
+\index{tick@{tick}!Wall@{Wall}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structForce}{Force}} Wall\+::tick (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBall}{Ball}} \&}]{ball }\end{DoxyParamCaption})}
+
+
+
+Se chequea las colisiones de las bola con los bricks. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Wall_8h}{Wall.\+h}}\item 
+Wall.\+cpp\end{DoxyCompactItemize}

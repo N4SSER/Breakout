@@ -1,0 +1,15 @@
+digraph "Paddle.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Paddle.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Contiene las funciones y caracteristicas de la barra."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Painter.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Painter_8h.html",tooltip="Clase que contiene las disminsiones de la barra y de la bola, ademas define los colores que se pueden..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Force.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Force_8h.html",tooltip="Este struct calcula la fuerza resultante de la bola cuando sucede una colision esta fuerza de empuje ..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Ball.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Ball_8h.html",tooltip="Contiene las funciones y caracteristicas de la bola."];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

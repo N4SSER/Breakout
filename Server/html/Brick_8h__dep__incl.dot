@@ -1,0 +1,12 @@
+digraph "Brick.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Brick.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Contiene todas las caracteristicas y funcionalidades de los bloques, es decir esta clase contiene a l..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Wall.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Wall_8h.html",tooltip="Contiene las funciones y caracteristicas de la clase Wall."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Game.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Game_8h.html",tooltip="Clase la cual maneja gran parte de la logica y repeticion del juego."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

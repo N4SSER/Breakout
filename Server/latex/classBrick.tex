@@ -1,0 +1,133 @@
+\hypertarget{classBrick}{}\doxysection{Brick Class Reference}
+\label{classBrick}\index{Brick@{Brick}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBrick_a4e17697ccd66d6168af7c71993cda795}\label{classBrick_a4e17697ccd66d6168af7c71993cda795}} 
+enum \{ {\bfseries W\+I\+D\+TH} = 25, 
+{\bfseries H\+E\+I\+G\+HT} = 20
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBrick_a447970eeab5381d835efcd942efdb7e9}{Brick}} (int col, int row, int type)
+\begin{DoxyCompactList}\small\item\em Este es el constructor de cada bloque del juego, este contiene el tipo de bloque, su posicion de fila y columna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBrick_a6a6bef533170c3de83e6b3676eb19e2d}{draw}} (\mbox{\hyperlink{classPainter}{Painter}} \&) const
+\begin{DoxyCompactList}\small\item\em Metodo el cual se encarga de dibujar los bloques en pantalla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBrick_a682a3243d22d5b1ce893c369908d731c}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Metodo el cual se encarga de revisar si un bloque tiene los suficientes golpes necesarios para ser destruido. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structForce}{Force}} \mbox{\hyperlink{classBrick_a2e6e6d9671122aa48a5cd642b93778d7}{tick}} (const \mbox{\hyperlink{classBall}{Ball}} \&)
+\begin{DoxyCompactList}\small\item\em Metodo el cual se encarga de chequear las colisiones que suceden entre la bola y los bloques, ademas si una bola toca a un blque este metodo se encarga de calcular la fuerza resultante de rebote. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBrick_a94e937852922275a0a110b10f44138e7}{set\+Type}} (int t)
+\begin{DoxyCompactList}\small\item\em Metodo que establece que tipo de bloque es mediante un int y ademas establece los parametros points y hits. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBrick_a1f3effbb867b87c3468a874ea8353f54}\label{classBrick_a1f3effbb867b87c3468a874ea8353f54}} 
+void \mbox{\hyperlink{classBrick_a1f3effbb867b87c3468a874ea8353f54}{check\+Destroyed}} ()
+\begin{DoxyCompactList}\small\item\em Metodo que verifica que tipo de bloque es y decide si el bloque tiene suficientes hits como para destruirse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBrick_a8ef95b7c35006abc62e6be1e480b8ca1}\label{classBrick_a8ef95b7c35006abc62e6be1e480b8ca1}} 
+int {\bfseries points}
+\item 
+\mbox{\Hypertarget{classBrick_ae23a834a74abc557bcafbed1bff9bc8b}\label{classBrick_ae23a834a74abc557bcafbed1bff9bc8b}} 
+bool {\bfseries destroyed} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBrick_a447970eeab5381d835efcd942efdb7e9}\label{classBrick_a447970eeab5381d835efcd942efdb7e9}} 
+\index{Brick@{Brick}!Brick@{Brick}}
+\index{Brick@{Brick}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{Brick()}{Brick()}}
+{\footnotesize\ttfamily Brick\+::\+Brick (\begin{DoxyParamCaption}\item[{int}]{col,  }\item[{int}]{row,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Este es el constructor de cada bloque del juego, este contiene el tipo de bloque, su posicion de fila y columna. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em col} & Posicion de Columna \\
+\hline
+{\em row} & Posicion de Fila \\
+\hline
+{\em type} & Tipo de bloque \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBrick_a682a3243d22d5b1ce893c369908d731c}\label{classBrick_a682a3243d22d5b1ce893c369908d731c}} 
+\index{Brick@{Brick}!destroy@{destroy}}
+\index{destroy@{destroy}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Brick\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodo el cual se encarga de revisar si un bloque tiene los suficientes golpes necesarios para ser destruido. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classBrick_a6a6bef533170c3de83e6b3676eb19e2d}\label{classBrick_a6a6bef533170c3de83e6b3676eb19e2d}} 
+\index{Brick@{Brick}!draw@{draw}}
+\index{draw@{draw}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Brick\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPainter}{Painter}} \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Metodo el cual se encarga de dibujar los bloques en pantalla. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classPainter}{Painter}}} & Objeto de tipo painter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBrick_a94e937852922275a0a110b10f44138e7}\label{classBrick_a94e937852922275a0a110b10f44138e7}} 
+\index{Brick@{Brick}!setType@{setType}}
+\index{setType@{setType}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Brick\+::set\+Type (\begin{DoxyParamCaption}\item[{int}]{t }\end{DoxyParamCaption})}
+
+
+
+Metodo que establece que tipo de bloque es mediante un int y ademas establece los parametros points y hits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBrick_a2e6e6d9671122aa48a5cd642b93778d7}\label{classBrick_a2e6e6d9671122aa48a5cd642b93778d7}} 
+\index{Brick@{Brick}!tick@{tick}}
+\index{tick@{tick}!Brick@{Brick}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structForce}{Force}} Brick\+::tick (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBall}{Ball}} \&}]{ball }\end{DoxyParamCaption})}
+
+
+
+Metodo el cual se encarga de chequear las colisiones que suceden entre la bola y los bloques, ademas si una bola toca a un blque este metodo se encarga de calcular la fuerza resultante de rebote. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classBall}{Ball}}} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Brick_8h}{Brick.\+h}}\item 
+Brick.\+cpp\end{DoxyCompactItemize}

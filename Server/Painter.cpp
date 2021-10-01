@@ -13,8 +13,6 @@ void Painter::bar(float x1, float y1, float x2, float y2)
     glVertex2f(x2, y2);
     glVertex2f(x1, y2);
     glEnd();
-
-
 }
 
 void Painter::ball(float cx, float cy)

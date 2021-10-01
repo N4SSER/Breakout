@@ -1,0 +1,97 @@
+\hypertarget{classPaddle}{}\doxysection{Paddle Class Reference}
+\label{classPaddle}\index{Paddle@{Paddle}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPaddle_a3ef24699f297acfa0cc6e50353570f37}\label{classPaddle_a3ef24699f297acfa0cc6e50353570f37}} 
+enum \{ {\bfseries W\+I\+D\+TH} = 60
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPaddle_a53895671ddfde9ba668546065ec4f164}{Paddle}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la barra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPaddle_af4a99cb41d65f5f18734f2d258dab5a5}{draw}} (\mbox{\hyperlink{classPainter}{Painter}} \&) const
+\begin{DoxyCompactList}\small\item\em Metodo el cual dibuja la barra en pantalla. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structForce}{Force}} \mbox{\hyperlink{classPaddle_a002ce785051e2bc74844a8f949cfa46d}{tick}} (const \mbox{\hyperlink{classBall}{Ball}} \&) const
+\begin{DoxyCompactList}\small\item\em Verifica la colisiones que sucede entre la barra del jugador y las bolas y cuando se detecta una colision hace que la bola rebote hacia arriba. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPaddle_a5b02a3c85441be6082466b0185e0b53b}{setX}} (int x)
+\begin{DoxyCompactList}\small\item\em Metodo que hace el set de la posicion X del jugador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPaddle_a53895671ddfde9ba668546065ec4f164}\label{classPaddle_a53895671ddfde9ba668546065ec4f164}} 
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Paddle()}{Paddle()}}
+{\footnotesize\ttfamily Paddle\+::\+Paddle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor de la barra. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPaddle_af4a99cb41d65f5f18734f2d258dab5a5}\label{classPaddle_af4a99cb41d65f5f18734f2d258dab5a5}} 
+\index{Paddle@{Paddle}!draw@{draw}}
+\index{draw@{draw}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Paddle\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPainter}{Painter}} \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Metodo el cual dibuja la barra en pantalla. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classPainter}{Painter}}} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPaddle_a5b02a3c85441be6082466b0185e0b53b}\label{classPaddle_a5b02a3c85441be6082466b0185e0b53b}} 
+\index{Paddle@{Paddle}!setX@{setX}}
+\index{setX@{setX}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Paddle\+::setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Metodo que hace el set de la posicion X del jugador. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPaddle_a002ce785051e2bc74844a8f949cfa46d}\label{classPaddle_a002ce785051e2bc74844a8f949cfa46d}} 
+\index{Paddle@{Paddle}!tick@{tick}}
+\index{tick@{tick}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structForce}{Force}} Paddle\+::tick (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBall}{Ball}} \&}]{ball }\end{DoxyParamCaption}) const}
+
+
+
+Verifica la colisiones que sucede entre la barra del jugador y las bolas y cuando se detecta una colision hace que la bola rebote hacia arriba. 
+
+\begin{DoxyAuthor}{Authors}
+Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Fuerza resultante 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Paddle_8h}{Paddle.\+h}}\item 
+Paddle.\+cpp\end{DoxyCompactItemize}

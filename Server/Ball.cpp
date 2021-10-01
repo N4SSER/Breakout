@@ -14,15 +14,21 @@ Ball::Ball(): x_(Wall::WIDTH ),
 
 void Ball::draw(Painter &p) const
 {
+
     p.setColor(Painter::WHITE);
     p.ball(x_, y_);
 }
-
+/**
+ *
+ * Este meteodo calcula la fuerza de rebote de la bola ademas cambia la velocidad de la bola
+ * dependiendo de la fuerza con la que choca la bola
+ *
+ */
 void Ball::tick(Force f)
 {
     float x = f.x;
     float y = f.y;
-    const float LIM = .8;
+    const float LIM = .2;
     if (x > LIM)
         x = LIM;
     if (x < -LIM)
@@ -33,14 +39,13 @@ void Ball::tick(Force f)
         y = -LIM;
 
     vx_ += 20 * x;
-    vy_ += 20 * y; //Corregir bug de velocidad. Posible solucion disminuir la velocidad incial y modficar la fuerza.
+    vy_ += 20 * y;
     x_ += vx_ * DT;
     y_ += vy_ * DT;
 }
 
 void Ball::setDeepLvl(int lvl) {
     this->lvl = lvl;
-
 }
 
 int Ball::getDeepLvl() const {

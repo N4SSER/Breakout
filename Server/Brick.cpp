@@ -8,8 +8,8 @@
 #include "Ball.h"
 #include "Game.h"
 #include "Paddle.h"
-int timesHit;
 int score;
+bool deepState=false;
 Brick::Brick(int col, int row,int type):
         col_(col),
         row_(row),
@@ -22,7 +22,31 @@ void Brick::draw(Painter &p) const
 {
     if (countDownTimer_ == -1)
     {
-        p.setColor(static_cast<Painter::Color>(row_ /2));
+        if(type==0)
+        {
+            p.setColor(Painter::WHITE);
+        }
+        if(type==1)
+        {
+            p.setColor(Painter::BLACK);
+        }
+        if(type==2)
+        {
+            p.setColor(Painter::GREEN);
+        }
+        if(type==3)
+        {
+            p.setColor(Painter::ORANGE);
+        }
+        if(type==4)
+        {
+            p.setColor(Painter::RED);
+        }
+        if(type==5)
+        {
+            p.setColor(Painter::YELLOW);
+        }
+
         p.bar(col_ * WIDTH + 3, row_ * HEIGHT + 3,
               (col_ + 1) * WIDTH - 1, (row_ + 1) * HEIGHT - 1);
     }
@@ -42,7 +66,6 @@ Force Brick::tick(const Ball &ball)
         return {0, 0};
     if (countDownTimer_ > 0)
         --countDownTimer_;
-
     Force result(0, 0);
     float f1 = (ball.y() - row_ * HEIGHT) * WIDTH -
                (ball.x() - col_ * WIDTH) * HEIGHT;
@@ -50,37 +73,42 @@ Force Brick::tick(const Ball &ball)
                (ball.x() - col_ * WIDTH) * HEIGHT;
     bool d = f1 < 0;
     bool u = f2 < 0;
-
-    if (d && u) // top
+    if(!deepState)
     {
-        if (row_ * HEIGHT - ball.y() - 1 < 0 ){
-            timesHit+=1;
-            result += Force(0, row_ * HEIGHT - ball.y() - 1);}
-    }
-    else if (d && !u) // right
-    {
-        if (col_ * WIDTH + WIDTH - ball.x() + 1 > 0){
-            timesHit+=1;
-            result += Force(col_ * WIDTH + WIDTH - ball.x() + 1,0); //El bug tiene que ver con esto?
+        if (d && u) // top
+        {
+            if (row_ * HEIGHT - ball.y() - 1 < 0 ){
+                result += Force(0, row_ * HEIGHT - ball.y() - 1);
+            }
         }
-    }
-    else if (!d && u) // left
-    {
-        if (col_ * WIDTH - ball.x() - 1 < 0){
-            timesHit+=1;
-            result += Force(0, col_ * WIDTH - ball.x() - 1);
+        else if (d && !u) // right
+        {
+            if (col_ * WIDTH + WIDTH - ball.x() + 1 > 0){
+                result += Force(col_ * WIDTH + WIDTH - ball.x() + 1,0);
+            }
         }
-    }
-    else
-    {
-        if (row_ * HEIGHT + HEIGHT - ball.y() + 1 > 0){
-            timesHit+=1;
-            result += Force(0, row_ * HEIGHT + HEIGHT - ball.y() + 1);
+        else if (!d && u) // left
+        {
+            if (col_ * WIDTH - ball.x() - 1 < 0){
+                result += Force(0, col_ * WIDTH - ball.x() - 1);
+            }
+        }
+        else
+        {
+            //Down
+            if (row_ * HEIGHT + HEIGHT - ball.y() + 1 > 0){
+                result += Force(0, row_ * HEIGHT + HEIGHT - ball.y() + 1);
+
+            }
 
         }
-
+        return result;
     }
-    return result;
+    //Modo profundidad activado
+    else{
+        return result;
+    }
+
 }
 
 void Brick::destroy()
@@ -93,7 +121,6 @@ void Brick::destroy()
 
 
 }
-
 void Brick::setType(int t) {
     switch (t) {
         case 0:
@@ -128,21 +155,18 @@ void Brick::checkDestroyed() {
     if(type<3){
         destroyed = true;
         countDownTimer_ = Painter::BLACK * 10;
-        timesHit=0;
         destroyed = false;
-        score=score+points;
-        std::cout<<score<<std::endl;
+        //score=score+points;
+        //std::cout<<score<<std::endl;
     }
     else if(type ==3){
         if(game->ball_.getDeepLvl() > 2){
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            timesHit=0;
             destroyed =  false;
             score= score+points;
-            std::cout<<score<<std::endl;
-            std::cout<<"Es un bloque interno" <<std::endl;
-
+            //std::cout<<score<<std::endl;
+            //std::cout<<"Es un bloque interno" <<std::endl;
         }
     }
     else if(type==5){
@@ -151,51 +175,46 @@ void Brick::checkDestroyed() {
             // Aumentar el tamaño de la barra de jugador
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            timesHit=0;
             destroyed = false;
             score=score+points;
             WidthofPaddle+=30;
-            std::cout<<score<<std::endl;
-            std::cout<<"Surprise1"<<std::endl;
+            //std::cout<<score<<std::endl;
+            //std::cout<<"Surprise1"<<std::endl;
         }
         else if(typeofSup==1){
             // Disminuir el tamaño de la barra de jugador.
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            timesHit=0;
             destroyed = false;
             score=score+points;
             WidthofPaddle-=30;
-            std::cout<<score<<std::endl;
-            std::cout<<"Surprise2"<<std::endl;
+            //std::cout<<score<<std::endl;
+            //std::cout<<"Surprise2"<<std::endl;
         }
         else if(typeofSup==2){
             //Disminuir la velocidad de la bola
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            timesHit=0;
             destroyed = false;
             score=score+points;
             ball_speed_x= 20;
             ball_speed_y= -20;
-            std::cout<<score<<std::endl;
-            std::cout<<"Surprise3"<<std::endl;
+            //std::cout<<score<<std::endl;
+            //std::cout<<"Surprise3"<<std::endl;
         }
         else{
             //Aumentar la velocidad de la bola
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            timesHit=0;
             destroyed = false;
             score=score+points;
             ball_speed_x= 100;
             ball_speed_y= -100;
-            std::cout<<score<<std::endl;
-            std::cout<<"Surprise4"<<std::endl;
+            //std::cout<<score<<std::endl;
+            //std::cout<<"Surprise4"<<std::endl;
         }
     }
     else{
         game->ball_.increaseDeep();
     }
 }
-
