@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/pablo/Desktop/clion-2021.2.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/164/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/pablo/Desktop/clion-2021.2.1/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/164/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pablo/CLionProjects/Breakout/Server
+CMAKE_SOURCE_DIR = /home/n4ssser/Breakout/Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pablo/CLionProjects/Breakout/Server/cmake-build-debug
+CMAKE_BINARY_DIR = /home/n4ssser/Breakout/Server/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/pablo/CLionProjects/Breakout/Server/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/pablo/Desktop/clion-2021.2.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/164/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/pablo/Desktop/clion-2021.2.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/164/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles /home/pablo/CLionProjects/Breakout/Server/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles /home/n4ssser/Breakout/Server/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/n4ssser/Breakout/Server/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,30 +129,6 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
-Ball.o: Ball.cpp.o
-.PHONY : Ball.o
-
-# target to build an object file
-Ball.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Ball.cpp.o
-.PHONY : Ball.cpp.o
-
-Ball.i: Ball.cpp.i
-.PHONY : Ball.i
-
-# target to preprocess a source file
-Ball.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Ball.cpp.i
-.PHONY : Ball.cpp.i
-
-Ball.s: Ball.cpp.s
-.PHONY : Ball.s
-
-# target to generate assembly for a file
-Ball.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Ball.cpp.s
-.PHONY : Ball.cpp.s
-
 Breakout.o: Breakout.cpp.o
 .PHONY : Breakout.o
 
@@ -177,173 +153,197 @@ Breakout.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Breakout.cpp.s
 .PHONY : Breakout.cpp.s
 
-Brick.o: Brick.cpp.o
-.PHONY : Brick.o
+Game/Ball.o: Game/Ball.cpp.o
+.PHONY : Game/Ball.o
 
 # target to build an object file
-Brick.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Brick.cpp.o
-.PHONY : Brick.cpp.o
+Game/Ball.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Ball.cpp.o
+.PHONY : Game/Ball.cpp.o
 
-Brick.i: Brick.cpp.i
-.PHONY : Brick.i
+Game/Ball.i: Game/Ball.cpp.i
+.PHONY : Game/Ball.i
 
 # target to preprocess a source file
-Brick.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Brick.cpp.i
-.PHONY : Brick.cpp.i
+Game/Ball.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Ball.cpp.i
+.PHONY : Game/Ball.cpp.i
 
-Brick.s: Brick.cpp.s
-.PHONY : Brick.s
+Game/Ball.s: Game/Ball.cpp.s
+.PHONY : Game/Ball.s
 
 # target to generate assembly for a file
-Brick.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Brick.cpp.s
-.PHONY : Brick.cpp.s
+Game/Ball.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Ball.cpp.s
+.PHONY : Game/Ball.cpp.s
 
-Force.o: Force.cpp.o
-.PHONY : Force.o
+Game/Brick.o: Game/Brick.cpp.o
+.PHONY : Game/Brick.o
 
 # target to build an object file
-Force.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Force.cpp.o
-.PHONY : Force.cpp.o
+Game/Brick.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Brick.cpp.o
+.PHONY : Game/Brick.cpp.o
 
-Force.i: Force.cpp.i
-.PHONY : Force.i
+Game/Brick.i: Game/Brick.cpp.i
+.PHONY : Game/Brick.i
 
 # target to preprocess a source file
-Force.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Force.cpp.i
-.PHONY : Force.cpp.i
+Game/Brick.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Brick.cpp.i
+.PHONY : Game/Brick.cpp.i
 
-Force.s: Force.cpp.s
-.PHONY : Force.s
+Game/Brick.s: Game/Brick.cpp.s
+.PHONY : Game/Brick.s
 
 # target to generate assembly for a file
-Force.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Force.cpp.s
-.PHONY : Force.cpp.s
+Game/Brick.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Brick.cpp.s
+.PHONY : Game/Brick.cpp.s
 
-Game.o: Game.cpp.o
-.PHONY : Game.o
+Game/Force.o: Game/Force.cpp.o
+.PHONY : Game/Force.o
 
 # target to build an object file
-Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game.cpp.o
-.PHONY : Game.cpp.o
+Game/Force.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Force.cpp.o
+.PHONY : Game/Force.cpp.o
 
-Game.i: Game.cpp.i
-.PHONY : Game.i
+Game/Force.i: Game/Force.cpp.i
+.PHONY : Game/Force.i
 
 # target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game.cpp.i
-.PHONY : Game.cpp.i
+Game/Force.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Force.cpp.i
+.PHONY : Game/Force.cpp.i
 
-Game.s: Game.cpp.s
-.PHONY : Game.s
+Game/Force.s: Game/Force.cpp.s
+.PHONY : Game/Force.s
 
 # target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game.cpp.s
-.PHONY : Game.cpp.s
+Game/Force.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Force.cpp.s
+.PHONY : Game/Force.cpp.s
 
-Paddle.o: Paddle.cpp.o
-.PHONY : Paddle.o
+Game/Game.o: Game/Game.cpp.o
+.PHONY : Game/Game.o
 
 # target to build an object file
-Paddle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Paddle.cpp.o
-.PHONY : Paddle.cpp.o
+Game/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Game.cpp.o
+.PHONY : Game/Game.cpp.o
 
-Paddle.i: Paddle.cpp.i
-.PHONY : Paddle.i
+Game/Game.i: Game/Game.cpp.i
+.PHONY : Game/Game.i
 
 # target to preprocess a source file
-Paddle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Paddle.cpp.i
-.PHONY : Paddle.cpp.i
+Game/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Game.cpp.i
+.PHONY : Game/Game.cpp.i
 
-Paddle.s: Paddle.cpp.s
-.PHONY : Paddle.s
+Game/Game.s: Game/Game.cpp.s
+.PHONY : Game/Game.s
 
 # target to generate assembly for a file
-Paddle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Paddle.cpp.s
-.PHONY : Paddle.cpp.s
+Game/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Game.cpp.s
+.PHONY : Game/Game.cpp.s
 
-Painter.o: Painter.cpp.o
-.PHONY : Painter.o
+Game/Paddle.o: Game/Paddle.cpp.o
+.PHONY : Game/Paddle.o
 
 # target to build an object file
-Painter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Painter.cpp.o
-.PHONY : Painter.cpp.o
+Game/Paddle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Paddle.cpp.o
+.PHONY : Game/Paddle.cpp.o
 
-Painter.i: Painter.cpp.i
-.PHONY : Painter.i
+Game/Paddle.i: Game/Paddle.cpp.i
+.PHONY : Game/Paddle.i
 
 # target to preprocess a source file
-Painter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Painter.cpp.i
-.PHONY : Painter.cpp.i
+Game/Paddle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Paddle.cpp.i
+.PHONY : Game/Paddle.cpp.i
 
-Painter.s: Painter.cpp.s
-.PHONY : Painter.s
+Game/Paddle.s: Game/Paddle.cpp.s
+.PHONY : Game/Paddle.s
 
 # target to generate assembly for a file
-Painter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Painter.cpp.s
-.PHONY : Painter.cpp.s
+Game/Paddle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Paddle.cpp.s
+.PHONY : Game/Paddle.cpp.s
 
-SocketServer.o: SocketServer.cpp.o
-.PHONY : SocketServer.o
+Game/Painter.o: Game/Painter.cpp.o
+.PHONY : Game/Painter.o
 
 # target to build an object file
-SocketServer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/SocketServer.cpp.o
-.PHONY : SocketServer.cpp.o
+Game/Painter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Painter.cpp.o
+.PHONY : Game/Painter.cpp.o
 
-SocketServer.i: SocketServer.cpp.i
-.PHONY : SocketServer.i
+Game/Painter.i: Game/Painter.cpp.i
+.PHONY : Game/Painter.i
 
 # target to preprocess a source file
-SocketServer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/SocketServer.cpp.i
-.PHONY : SocketServer.cpp.i
+Game/Painter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Painter.cpp.i
+.PHONY : Game/Painter.cpp.i
 
-SocketServer.s: SocketServer.cpp.s
-.PHONY : SocketServer.s
+Game/Painter.s: Game/Painter.cpp.s
+.PHONY : Game/Painter.s
 
 # target to generate assembly for a file
-SocketServer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/SocketServer.cpp.s
-.PHONY : SocketServer.cpp.s
+Game/Painter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Painter.cpp.s
+.PHONY : Game/Painter.cpp.s
 
-Wall.o: Wall.cpp.o
-.PHONY : Wall.o
+Game/SocketServer.o: Game/SocketServer.cpp.o
+.PHONY : Game/SocketServer.o
 
 # target to build an object file
-Wall.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Wall.cpp.o
-.PHONY : Wall.cpp.o
+Game/SocketServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/SocketServer.cpp.o
+.PHONY : Game/SocketServer.cpp.o
 
-Wall.i: Wall.cpp.i
-.PHONY : Wall.i
+Game/SocketServer.i: Game/SocketServer.cpp.i
+.PHONY : Game/SocketServer.i
 
 # target to preprocess a source file
-Wall.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Wall.cpp.i
-.PHONY : Wall.cpp.i
+Game/SocketServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/SocketServer.cpp.i
+.PHONY : Game/SocketServer.cpp.i
 
-Wall.s: Wall.cpp.s
-.PHONY : Wall.s
+Game/SocketServer.s: Game/SocketServer.cpp.s
+.PHONY : Game/SocketServer.s
 
 # target to generate assembly for a file
-Wall.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Wall.cpp.s
-.PHONY : Wall.cpp.s
+Game/SocketServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/SocketServer.cpp.s
+.PHONY : Game/SocketServer.cpp.s
+
+Game/Wall.o: Game/Wall.cpp.o
+.PHONY : Game/Wall.o
+
+# target to build an object file
+Game/Wall.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Wall.cpp.o
+.PHONY : Game/Wall.cpp.o
+
+Game/Wall.i: Game/Wall.cpp.i
+.PHONY : Game/Wall.i
+
+# target to preprocess a source file
+Game/Wall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Wall.cpp.i
+.PHONY : Game/Wall.cpp.i
+
+Game/Wall.s: Game/Wall.cpp.s
+.PHONY : Game/Wall.s
+
+# target to generate assembly for a file
+Game/Wall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Game/Wall.cpp.s
+.PHONY : Game/Wall.cpp.s
 
 # Help Target
 help:
@@ -354,33 +354,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... server"
-	@echo "... Ball.o"
-	@echo "... Ball.i"
-	@echo "... Ball.s"
 	@echo "... Breakout.o"
 	@echo "... Breakout.i"
 	@echo "... Breakout.s"
-	@echo "... Brick.o"
-	@echo "... Brick.i"
-	@echo "... Brick.s"
-	@echo "... Force.o"
-	@echo "... Force.i"
-	@echo "... Force.s"
-	@echo "... Game.o"
-	@echo "... Game.i"
-	@echo "... Game.s"
-	@echo "... Paddle.o"
-	@echo "... Paddle.i"
-	@echo "... Paddle.s"
-	@echo "... Painter.o"
-	@echo "... Painter.i"
-	@echo "... Painter.s"
-	@echo "... SocketServer.o"
-	@echo "... SocketServer.i"
-	@echo "... SocketServer.s"
-	@echo "... Wall.o"
-	@echo "... Wall.i"
-	@echo "... Wall.s"
+	@echo "... Game/Ball.o"
+	@echo "... Game/Ball.i"
+	@echo "... Game/Ball.s"
+	@echo "... Game/Brick.o"
+	@echo "... Game/Brick.i"
+	@echo "... Game/Brick.s"
+	@echo "... Game/Force.o"
+	@echo "... Game/Force.i"
+	@echo "... Game/Force.s"
+	@echo "... Game/Game.o"
+	@echo "... Game/Game.i"
+	@echo "... Game/Game.s"
+	@echo "... Game/Paddle.o"
+	@echo "... Game/Paddle.i"
+	@echo "... Game/Paddle.s"
+	@echo "... Game/Painter.o"
+	@echo "... Game/Painter.i"
+	@echo "... Game/Painter.s"
+	@echo "... Game/SocketServer.o"
+	@echo "... Game/SocketServer.i"
+	@echo "... Game/SocketServer.s"
+	@echo "... Game/Wall.o"
+	@echo "... Game/Wall.i"
+	@echo "... Game/Wall.s"
 .PHONY : help
 
 

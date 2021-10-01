@@ -33,8 +33,9 @@ void Game::tick()
         ball.tick(f);
         if (ball.y() > Wall::HEIGHT){
             ball = Ball();
-            ball.setDeepLvl(0); //No actualiza correctamente
+            ball.setDeepLvl(0);
             std::cout<<"Oops!"<<std::endl;
+            timesLosed++;
             WidthofPaddle-=10;
             }
         }
@@ -43,12 +44,15 @@ void Game::tick()
         balls.push_back(ball_);
         pB+=200;
     }
+    if(timesLosed>5){
+        finished = true;
+    }
 }
 
 Game::Game() {
 
     balls.push_back(ball_);
-    pB = 100;
+    pB = 100;std::cout<<score<<std::endl;
 
 }
 

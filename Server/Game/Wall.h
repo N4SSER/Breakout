@@ -18,6 +18,7 @@
 
 class Wall {
     public:
+    int score;
     enum { ROWS_COUNT = 16,
         COLS_COUNT = 8 * 3 };
     enum { WIDTH = ROWS_COUNT * Brick::WIDTH,
@@ -46,7 +47,6 @@ public:
      * @authors Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo
      */
 
-    int getpts() const;
     typedef std::vector<Brick> Bricks;
     Bricks bricks_;
 };

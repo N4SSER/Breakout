@@ -31,6 +31,10 @@ int main(int argc, char **argv) {
     client = new SocketClient;
     pthread_t thread;
     pthread_create(&thread,nullptr,clientRun,nullptr);
+    cout<<"Enter your name"<<endl;
+    string msn;
+    cin>>msn;
+    client->send_message(msn.c_str());
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(0,0);

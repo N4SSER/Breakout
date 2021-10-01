@@ -152,66 +152,45 @@ void Brick::setType(int t) {
 
 void Brick::checkDestroyed() {
     Game* game = Game::getInstance();
+    destroyed= true;
     if(type<3){
-        destroyed = true;
         countDownTimer_ = Painter::BLACK * 10;
-        destroyed = false;
         //score=score+points;
         //std::cout<<score<<std::endl;
     }
     else if(type ==3){
         if(game->ball_.getDeepLvl() > 2){
-            destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            destroyed =  false;
             score= score+points;
-            //std::cout<<score<<std::endl;
-            //std::cout<<"Es un bloque interno" <<std::endl;
         }
     }
     else if(type==5){
         int typeofSup = rand() % 4;
         if(typeofSup==0){
             // Aumentar el tamaño de la barra de jugador
-            destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            destroyed = false;
             score=score+points;
             WidthofPaddle+=30;
-            //std::cout<<score<<std::endl;
-            //std::cout<<"Surprise1"<<std::endl;
         }
         else if(typeofSup==1){
             // Disminuir el tamaño de la barra de jugador.
-            destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            destroyed = false;
             score=score+points;
             WidthofPaddle-=30;
-            //std::cout<<score<<std::endl;
-            //std::cout<<"Surprise2"<<std::endl;
         }
         else if(typeofSup==2){
             //Disminuir la velocidad de la bola
-            destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            destroyed = false;
             score=score+points;
             ball_speed_x= 20;
             ball_speed_y= -20;
-            //std::cout<<score<<std::endl;
-            //std::cout<<"Surprise3"<<std::endl;
         }
         else{
             //Aumentar la velocidad de la bola
-            destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            destroyed = false;
             score=score+points;
             ball_speed_x= 100;
             ball_speed_y= -100;
-            //std::cout<<score<<std::endl;
-            //std::cout<<"Surprise4"<<std::endl;
         }
     }
     else{

@@ -1,9 +1,10 @@
 #include <GL/glut.h>
+#include <GL/freeglut.h>
 #include <iostream>
-#include "Game.h"
-#include "Wall.h"
-#include "Painter.h"
-#include "SocketServer.h"
+#include "Game/Game.h"
+#include "Game/Wall.h"
+#include "Game/Painter.h"
+#include "Game/SocketServer.h"
 SocketServer* server;
 void * serverRun(void* obj){
     try{
@@ -14,7 +15,7 @@ void * serverRun(void* obj){
     }
     pthread_exit(nullptr);
 }
- Game* game = Game::getInstance();
+Game* game = Game::getInstance();
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -25,6 +26,13 @@ void display()
 
 void timer(int = 0)
 {
+    if(game->finished){
+        glutLeaveMainLoop();
+        server->send_message("Oops!, you've losed \n your score:");
+        char s = game->wall_.score;
+        string ss = to_string(s);
+        server->send_message(ss.c_str());
+    }
     for (int i = 0; i < 1.0 / 25 / Ball::DT; ++i)
         game->tick();
     display();
@@ -37,7 +45,9 @@ int main(int argc, char **argv)
     pthread_t thread;
     pthread_create(&thread, nullptr,serverRun,nullptr);
     pthread_detach(thread);
-
+    while (!game->start){
+        //Waiting for login
+    }
     /* Game Here */
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);

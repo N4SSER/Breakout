@@ -83,17 +83,21 @@ void SocketServer::ctrlC(string msg) {
     if(msg == "a"){
         x -=20;
     }
-    if(msg == "d")
+    else if(msg == "d")
     {
         x +=20;
 
     }
-    if(msg == "w"){ //Activar modo profundo
+    else if(msg == "w"){ //Activar modo profundo
         state=true;
     }
-    if(msg== "s") //Desactivar modo profundo
+    else if(msg== "s") //Desactivar modo profundo
     {
         state=false;
+    }
+    else{
+        g->start = true;
+        cout<<msg+" has connected!"<<endl;
     }
     g->setX(x);
     g->Set_Deep(state);

@@ -38,20 +38,18 @@ Force Wall::tick(const Ball &ball)
     {
         Force f = brick . tick(ball);
         result += f;
-        if (f.x != 0 || f.y != 0)
+        if (f.x != 0 || f.y != 0){
             brick.timesHit++;
-            brick . destroy();
-            if(brick.destroyed){
-                points +=brick.points;
-                getpts();
-            }
+            brick.destroy();
+            if(brick.destroyed)
+                this->score = ::score;
+        }
+
+
     }
 
     return result;
 }
 
-int Wall::getpts() const {
-    std::cout<<points<<std::endl;
-    return points;
-}
+
 

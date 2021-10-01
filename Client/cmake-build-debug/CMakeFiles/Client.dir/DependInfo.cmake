@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pablo/CLionProjects/Breakout/Client/SocketClient.cpp" "/home/pablo/CLionProjects/Breakout/Client/cmake-build-debug/CMakeFiles/Client.dir/SocketClient.cpp.o"
-  "/home/pablo/CLionProjects/Breakout/Client/main.cpp" "/home/pablo/CLionProjects/Breakout/Client/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o"
+  "/home/n4ssser/Breakout/Client/SocketClient.cpp" "/home/n4ssser/Breakout/Client/cmake-build-debug/CMakeFiles/Client.dir/SocketClient.cpp.o"
+  "/home/n4ssser/Breakout/Client/main.cpp" "/home/n4ssser/Breakout/Client/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -17,6 +17,7 @@
 
 class Game {
 public:
+    bool finished=false;
     /**
      *
      * @brief Metodo el cual se encarga de dibujar a las clases de Ball, Wall y de Paddle
@@ -42,8 +43,10 @@ public:
      * @authors Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo
      */
     static Game* getInstance();
+    bool start = false;
     int level{};
     Ball ball_;
+    int timesLosed=0;
     /**
      * @brief Metodo sencillo que maneja el estado de profundidad de las bolas
      * @param state Establece el estado de profundidad es decir si es true el modo profundidad esta activado y si
@@ -51,12 +54,12 @@ public:
      * @authors Brown Aparicio Nasser Santiago, Ramos Madrigal Jose Pablo
      */
     void Set_Deep(bool state);
+    Wall wall_;
 private:
     std:: list<Ball> balls;
     Game();
     int pB;
     inline static Game* gameI;
-    Wall wall_;
     Paddle paddle;
 };
 

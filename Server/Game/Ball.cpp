@@ -28,7 +28,7 @@ void Ball::tick(Force f)
 {
     float x = f.x;
     float y = f.y;
-    const float LIM = .2;
+    const float LIM = .33;
     if (x > LIM)
         x = LIM;
     if (x < -LIM)

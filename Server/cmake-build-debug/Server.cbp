@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug"/>
+				<Option working_dir="/home/n4ssser/Breakout/Server/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug"/>
+				<Option working_dir="/home/n4ssser/Breakout/Server/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug"/>
+				<Option working_dir="/home/n4ssser/Breakout/Server/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server">
-				<Option output="/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug"/>
+				<Option output="/home/n4ssser/Breakout/Server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/n4ssser/Breakout/Server/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="server/fast">
-				<Option output="/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug"/>
+				<Option output="/home/n4ssser/Breakout/Server/cmake-build-debug/server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/n4ssser/Breakout/Server/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,65 +75,65 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/pablo/CLionProjects/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 server/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/n4ssser/Breakout/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Ball.cpp">
+		<Unit filename="/home/n4ssser/Breakout/Server/Breakout.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Ball.h">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Ball.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Breakout.cpp">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Ball.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Brick.cpp">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Brick.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Brick.h">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Brick.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Force.cpp">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Force.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Force.h">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Force.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Game.cpp">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Game.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Game.h">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Game.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Paddle.cpp">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Paddle.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Paddle.h">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Paddle.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Painter.cpp">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Painter.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Painter.h">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Painter.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/SocketServer.cpp">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/SocketServer.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/SocketServer.h">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/SocketServer.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Wall.cpp">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Wall.cpp">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/Wall.h">
+		<Unit filename="/home/n4ssser/Breakout/Server/Game/Wall.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/pablo/CLionProjects/Breakout/Server/CMakeLists.txt">
+		<Unit filename="/home/n4ssser/Breakout/Server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
