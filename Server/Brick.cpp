@@ -8,7 +8,6 @@
 #include "Ball.h"
 #include "Game.h"
 #include "Paddle.h"
-int timesHit;
 int score;
 bool deepState=false;
 Brick::Brick(int col, int row,int type):
@@ -79,21 +78,18 @@ Force Brick::tick(const Ball &ball)
         if (d && u) // top
         {
             if (row_ * HEIGHT - ball.y() - 1 < 0 ){
-                timesHit+=1;
                 result += Force(0, row_ * HEIGHT - ball.y() - 1);
             }
         }
         else if (d && !u) // right
         {
             if (col_ * WIDTH + WIDTH - ball.x() + 1 > 0){
-                timesHit+=1;
                 result += Force(col_ * WIDTH + WIDTH - ball.x() + 1,0);
             }
         }
         else if (!d && u) // left
         {
             if (col_ * WIDTH - ball.x() - 1 < 0){
-                timesHit+=1;
                 result += Force(0, col_ * WIDTH - ball.x() - 1);
             }
         }
@@ -101,7 +97,6 @@ Force Brick::tick(const Ball &ball)
         {
             //Down
             if (row_ * HEIGHT + HEIGHT - ball.y() + 1 > 0){
-                timesHit+=1;
                 result += Force(0, row_ * HEIGHT + HEIGHT - ball.y() + 1);
 
             }
@@ -160,7 +155,6 @@ void Brick::checkDestroyed() {
     if(type<3){
         destroyed = true;
         countDownTimer_ = Painter::BLACK * 10;
-        timesHit=0;
         destroyed = false;
         //score=score+points;
         //std::cout<<score<<std::endl;
@@ -169,7 +163,6 @@ void Brick::checkDestroyed() {
         if(game->ball_.getDeepLvl() > 2){
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            timesHit=0;
             destroyed =  false;
             score= score+points;
             //std::cout<<score<<std::endl;
@@ -182,7 +175,6 @@ void Brick::checkDestroyed() {
             // Aumentar el tamaño de la barra de jugador
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            timesHit=0;
             destroyed = false;
             score=score+points;
             WidthofPaddle+=30;
@@ -193,7 +185,6 @@ void Brick::checkDestroyed() {
             // Disminuir el tamaño de la barra de jugador.
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            timesHit=0;
             destroyed = false;
             score=score+points;
             WidthofPaddle-=30;
@@ -204,7 +195,6 @@ void Brick::checkDestroyed() {
             //Disminuir la velocidad de la bola
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            timesHit=0;
             destroyed = false;
             score=score+points;
             ball_speed_x= 20;
@@ -216,7 +206,6 @@ void Brick::checkDestroyed() {
             //Aumentar la velocidad de la bola
             destroyed = true;
             countDownTimer_ = Painter::BLACK * 10;
-            timesHit=0;
             destroyed = false;
             score=score+points;
             ball_speed_x= 100;

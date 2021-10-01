@@ -39,6 +39,7 @@ Force Wall::tick(const Ball &ball)
         Force f = brick . tick(ball);
         result += f;
         if (f.x != 0 || f.y != 0)
+            brick.timesHit++;
             brick . destroy();
             if(brick.destroyed){
                 points +=brick.points;

@@ -47,6 +47,7 @@ public:
     Force tick(const Ball &);
     int points;
     bool destroyed= false;
+    int timesHit=0;
 private:
     int hits;
     int type;
